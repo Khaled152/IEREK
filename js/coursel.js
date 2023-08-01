@@ -1,16 +1,31 @@
 const coursel =  document.querySelector("#card1")
 const fullDiscriptionText = document.querySelector("#full-discription")
-
+var selectedReadMe
 fullDiscriptionText.style.display = "none"
 
 
 coursel.addEventListener("click" , (event)=>{
   
     target = event.target;
+    
     if(target.classList.contains("read-more")){
+      if(selectedReadMe != undefined &&selectedReadMe != target){
+        selectedReadMe.classList.remove("selected")
+        selectedReadMe.textContent =  "Read More"
+      }
+
+      selectedReadMe = target
+      if(!target.classList.contains("selected")){
         fullDiscriptionText.style.display = "block"
         discription = target.previousElementSibling
         fullDiscriptionText.innerText = discription.innerText
+        target.classList.add("selected")
+        target.textContent =  "Read Less"
+      }else{
+        fullDiscriptionText.style.display = "none"
+        target.classList.remove("selected")
+        target.textContent =  "Read More"
+      }
     }
 })
 
