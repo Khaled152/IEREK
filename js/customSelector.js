@@ -8,7 +8,7 @@ const links = document.querySelectorAll(".nav-link")
 checkedItem.previousElementSibling.checked = true
 seletedArticleViewer.innerHTML = checkedItem.previousElementSibling.previousElementSibling.innerHTML
 
-document.querySelector(".navbar-nav").addEventListener("click", (e) => {
+document.querySelector(".nav-tab").addEventListener("click", (e) => {
 
     e.preventDefault()
     if (e.target.classList.contains("nav-link")) {
