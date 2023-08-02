@@ -23,7 +23,12 @@
 
   <script src="js/all.js"></script>
   <title>index</title>
-
+<style>
+  .collapsed-content {
+            overflow: hidden;
+            max-height: 100px; /* Adjust the height to control the visible content */
+        }
+</style>
 
 </head>
 
@@ -33,7 +38,7 @@
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
-          style="width: 870px; padding-top: 20px; padding-left: 50px;"></a>
+          style="width: 678px; padding-top: 20px; padding-left: 50px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,6 +72,7 @@
 
   <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
   <main>
+    
     <div class="social">
       <div class="social-item">
         <i class="fa-brands fa-facebook-f"></i>
@@ -85,7 +91,7 @@
       <div class="row" style="padding-top: 100px;">
         <div class="col-md-6 Justify-content-center">
           <h1 class="display-1 font"
-            style="width: 100%; color: white; font-weight: bold; text-align: center; padding-left: 50px;font-family:Samsung Sharp Sans Bold;">Your
+            style="width: 100%; color: white; font-weight: bold; text-align: center; padding-left: 50px;font-family:Samsung Sharp Sans Bold; font-size: 55px;">Your
             Research,<br> Swiftly published</h1>
           <div class="row" style="padding-top: 20px;">
             <div class="col-md-6" style="text-align: right;">
@@ -104,13 +110,13 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-3">
-              <img src="img/1.png" style="width: 180px;  ">
+              <img src="img/1.png" style="width: 120px;  ">
             </div>
             <div class="col-md-3">
-              <img src="img/2.png" style="width: 180px;  margin-right: 100px; ">
+              <img src="img/2.png" style="width: 120px;  margin-right: 100px; ">
             </div>
             <div class="col-md-3">
-              <img src="img/3.png" style="width: 180px; ">
+              <img src="img/3.png" style="width: 120px; ">
             </div>
           </div>
         </div>
@@ -122,36 +128,52 @@
       <h1 style="color:#05af4f ;font-family: Samsung Sharp Sans bold;" >3 Months!</h1>
     </div>
 
-    <div class="container" style=" box-shadow: 0px 2px 20px 5px rgb(219, 216, 216); padding: 25px;" >
 
-      <div class="row">
-        <div class="description" > 
-          <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-            accumsan et viverra justo commodo.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-            Proin gravida dolor sit amet lacus accumsan et viverra justo
-            commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-            lacus accumsan et viverra justo commodo.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Aenean euismod bibendum
-            laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-            justo commodo.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-            amet lacus accumsan et viverra justo commodo.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Aenean euismod bibendum
-            laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-            justo commodo.</p>
-          <p class="collapse" id="collapseExample" style="font-family: Samsung Sharp Sans Regular;">Sed euismod, dui sed
-            consequat elementum, tellus dui vestibulum neque, sit amet dictum
-            orci justo at velit. Integer ut est sapien. Nullam nec elit eu
-            elit laoreet molestie ac in orci.</p>
-        </div>
-      </div>
-      <div class="row " style="justify-content: end;">
-        <a class="btn btn-light read-more" data-bs-toggle="collapse" href="#collapseExample" role="button"
-          aria-expanded="false" aria-controls="collapseExample" style="border-color: black; width: 180px; ">Read
-          more</a>
+<div class="container"style=" box-shadow: 0px 2px 20px 5px rgb(219, 216, 216); padding: 25px;"> 
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="collapsed-content container" id="collapseParagraph" >
+        <p>
+            This is the initial content of the paragraph. It contains some information that should be shown partially until the user clicks on the "Read More" button to expand it and read the full text.
+            Additional details and important information are available below this point.
+            <!-- Add more content here if needed -->
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+            sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+            accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+            massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+            Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+            sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+            accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+            massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+            Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+            sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+            accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+            massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+            Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+            sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+            accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+            massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+            Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
+        </p>
+    </div>
+    </div>  
+    <div class="col-md-12" style="text-align: end; padding-top: 20px;">
+      <button onclick="expandCollapse()" type="button" class="btn btn-light read-more" style="border-color: black; ">Read
+        more</button>
+    </div> 
+  
+  </div>
+
+   
+  
+  </div>
+    
+ 
 
       </div>
     </div>
@@ -159,7 +181,7 @@
     <div class="container" style="padding-top: 50px;">
       <div class="row">
         <div class="col-md-6">
-          <img src="img/Capture2.JPG" style="width: 600px;">
+          <img src="img/Capture2.JPG" style="width: 500px;">
 
         </div>
         <div class="col-md-6" style="text-align: center; ">
@@ -528,11 +550,10 @@
 
 
     <div id="articleViwer"></div>
-    <div class="container justify-content-center"  id="artcile-view">
-      <div id="selector-btn">
+   <!-- <div class="container justify-content-center"  id="artcile-view">
+      <div id="selector-btn" style="padding-right: 900px; padding-left: 0px !important; ">
 
-
-        <div class="checkbox-button" style="padding-left: 150px;"  for="conditions">
+        <div class="checkbox-button" style="padding-left: 70px;"  for="conditions">
           <div class="content" style="font-family: Samsung Sharp Sans Regular;">
             <h5 style="font-family: Samsung Sharp Sans Regular;"> ASj bahsjdb jahsbdjh asbdhjasbdhjasbdasd asdasdasd asda jh:</h5>
             <ul style="font-family: Samsung Sharp Sans Regular;">
@@ -543,7 +564,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox2" name="selector">
-          <label class="checkLabel" for="checkbox2" style="font-family: Samsung Sharp Sans bold;">Checkbox Button 1</label>
+          <label class="checkLabel" for="checkbox2" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
         </div>
 
         <div class="checkbox-button" for="oral">
@@ -556,7 +577,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox3" name="selector">
-          <label class="checkLabel" for="checkbox3" style="font-family: Samsung Sharp Sans bold;">Checkbox Button 1</label>
+          <label class="checkLabel" for="checkbox3" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
         </div>
 
         <div class="checkbox-button" for="submissions">
@@ -579,7 +600,7 @@
             </div>
           </div>
           <input type="checkbox" id="checkbox4" name="selector">
-          <label class="checkLabel" for="checkbox4" style="font-family: Samsung Sharp Sans bold;">Checkbox Button 1</label>
+          <label class="checkLabel" for="checkbox4" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
         </div>
 
         <div class="checkbox-button" for="fess">
@@ -598,7 +619,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox5" name="selector">
-          <label class="checkLabel" for="checkbox5" style="font-family: Samsung Sharp Sans bold;">Checkbox Button 1</label>
+          <label class="checkLabel" for="checkbox5" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
         </div>
 
       </div>
@@ -608,7 +629,7 @@
 
       </div>
     </div>
-
+-->
 
 
     <div class="container-fluid" style="text-align: center; padding-top: 100px;padding-bottom:20px; ">
@@ -624,7 +645,7 @@
          <div class="row justify-content-center">
           <div class=" col-3 ">
              <div class="card"
-            style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
             <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
               <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -643,7 +664,7 @@
 
           <div class=" col-3 ">
             <div class="card"
-                    style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
                     <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
                       <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -662,7 +683,7 @@
 
           <div class=" col-3 ">
             <div class="card"
-            style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
             <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
               <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -692,7 +713,7 @@
           <div class="row justify-content-center">
            <div class=" col-3 ">
             <div class="card"
-                    style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
                     <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
                       <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -711,7 +732,7 @@
  
            <div class=" col-3 ">
             <div class="card"
-            style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
             <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
               <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -730,7 +751,7 @@
  
            <div class=" col-3 ">
             <div class="card"
-            style="border-radius: 0px; width: 370px; height: 340px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
             <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
               <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
@@ -766,6 +787,7 @@
       </div>
     </div>
     </div>
+
     
 
  <!--<div class="container-fluid" style="margin-top: 50xp;">
@@ -992,6 +1014,18 @@
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/coursel.js"></script>
   <script src="js/customSelector.js"></script>
+
+
+  <script>
+    function expandCollapse() {
+        var content = document.getElementById("collapseParagraph");
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = "none"; /* You can adjust the height as needed */
+        }
+    }
+</script>
   <script>
 
 
