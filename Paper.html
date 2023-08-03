@@ -24,7 +24,7 @@
 
 
     <script src="js/all.js"></script>
-    <title>Submit Abstract</title>
+    <title>Submit Paper</title>
 
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
@@ -139,42 +139,39 @@
 
 
 
+
                             <div class="mb-3">
-                                <label>Paste Your Abstract Content here:</label>
-                                <div class="alert alert-danger" role="alert" style="border-radius: 0px;">
-                                    *Please make sure to add at least 3 keywords with your abstract*
+                                <label>OR Upload your Paper File : (Allowed EXtinsions: pdf, doc, docm and
+                                    dox)</label>
+                                <div class="row" style="width: 370px; padding-left: 20px;">
+
+                                    <input class="form-control" type="file" name="files[]" multiple>
+
+
                                 </div>
-                                <textarea style="width: 100%;">
-                                        Welcome to TinyMCE!
-                                    </textarea>
                             </div>
                             <div class="mb-3">
-                                <label>OR Upload your Abstract File : (Allowed EXtinsions: pdf, doc, docm and
-                                    dox)</label>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input class="form-control" type="file" name="files[]" multiple>
 
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input class="form-control" type="submit" value="Upload" style="width: 150px;">
+                                <div class="row" style="width: 370px; padding-left: 20px;">
 
-                                    </div>
+                                    <input class="form-control" type="file" name="files[]" multiple>
+
+
                                 </div>
                             </div>
                             <hr>
                             <div class="mb-3">
                                 <div class="row">
-                                    <div class="col-md-6" style="width: 100%;">
+                                    <div class="col-md-7">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Please Confirm that you Read <a href="#Instructions">Instructions</a>.
                                         </label>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn btn-success"
-                                            style="border-radius: 0px; width: 150px; "> Submit Abstract</button>
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-success" style="border-radius: 0px;">Submit
+                                            Paper</button>
                                     </div>
 
                                 </div>
@@ -188,43 +185,47 @@
                 </div>
                 <div class="col-md-5"
                     style="margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px;">
-                    <div class="row" style=" padding: 20px; background-color: #05af4f;">
-                        <div class="col-md-3">
+
+                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
+                        <div class="col-md-2">
                             <i class="fa-solid fa-cloud-arrow-up"
-                                style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
-                        </div>
-                        <div class="col-md-9" style="margin-left: -18px;">
-                            <h4 style="padding-top: 15px;  font-family: Samsung Sharp Sans bold; color: white;">
-                                1.Abstract</h4>
+                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
 
                         </div>
-                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <div class="col-md-10">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"><del> 1.Abstract</del>
+                            </h3>
+
+                        </div>
+                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
                     </div>
                     <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
+                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
                         <div class="col-md-2">
                             <i class="fa-solid fa-eye"
                                 style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
 
                         </div>
                         <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 2.Status</h4>
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> <del>2.Status</del>
+                            </h3>
 
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
                     </div>
                     <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
+
+                    <div class="row" style=" padding: 20px; background-color: #05af4f;">
+                        <div class="col-md-3">
                             <i class="fa-solid fa-upload"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+                                style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
+                        </div>
+                        <div class="col-md-9" style="margin-left: -18px;">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold; color: white;"> 3.Paper
+                            </h3>
 
                         </div>
-                        <div class="col-md-10">
-                            <h4 style="padding-top: 15px ; font-family: Samsung Sharp Sans bold;"> 3.Paper</h4>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     </div>
                     <hr>
                     <div class="row" style="padding-top: 20px; padding: 10px;">
@@ -234,7 +235,7 @@
 
                         </div>
                         <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 4.Revision</h4>
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 4.Revision</h3>
 
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -247,7 +248,7 @@
 
                         </div>
                         <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 5.Result</h4>
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 5.Result</h3>
 
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -270,9 +271,9 @@
         <div class="container " style="text-align: center; padding-top: 50px; justify-content: center;">
 
 
-            <h4 style="padding-top: 15px;" style="font-family: Samsung Sharp Sans bold;">Sbuscribe to Our <span
+            <h3 style="padding-top: 15px;" style="font-family: Samsung Sharp Sans bold;">Sbuscribe to Our <span
                     style="color: #05af4f;">Newsletter
-                </span></h4>
+                </span></h3>
             <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Aenean euismod bibendum
                 laoreet.</p>
