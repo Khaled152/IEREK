@@ -1,338 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Future Academy">
-    <meta name="keywords" content="HTML,CSS,bootstrap,JavaScript,education,CS,IS">
-    <meta name="author" content="Error 404">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Future Academy">
+        <meta name="keywords"
+            content="HTML,CSS,bootstrap,JavaScript,education,CS,IS">
+        <meta name="author" content="Error 404">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap JS -->
+        <!-- Bootstrap JS -->
 
+        <script src="js/all.js"></script>
+        <title>Submit Abstract</title>
 
-
-    <script src="js/all.js"></script>
-    <title>Submit Abstract</title>
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
-    <style>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+        <style>
 
 
     </style>
-</head>
+    </head>
 
-<body>
-    <a href="#articleViwer" id="articleHref"></a>
-    <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
-                    style="width: 678px; padding-top: 20px; padding-left: 50px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNav font" style="padding-right: 200px; padding-top: 30px; ">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#test">About Us</a>
-                    </li>
-                    <div class="nav-tab navbar-nav">
+    <body>
+        <a href="#articleViwer" id="articleHref"></a>
+        <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
+                        style="width: 678px; padding-top: 20px; padding-left: 50px;"></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNav font"
+                    style="padding-right: 200px; padding-top: 30px; ">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " href="#conditions">Conditions</a>
+                            <a class="nav-link " href="#test">About Us</a>
                         </li>
-                        <li class="nav-item nav-tab">
-                            <a class="nav-link" href="#oral">Oral Discussion</a>
-                        </li>
-                        <li class="nav-item nav-tab">
-                            <a class="nav-link" href="#submissions">Submissions</a>
-                        </li>
-                        <li class="nav-item nav-tab">
-                            <a class="nav-link" href="#fess">Fess</a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-    <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
-
-    <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
-    <main>
-        <div class="container" style="padding-top: 100px; font-family: Samsung Sharp Sans Regular;">
-            <div class="row">
-                <div class="col-md-6"
-                    style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 620px;">
-                    <div class="row" style="background-color: #05af4f;">
-                        <p style="color: white; font-size: 13px;"><span style="font-size: 25px;">SUBMIT ABSTRACT</span>
-                            Cittes' identify Through Architecture
-                            and Arts (CITTA) -7th Edition</p>
-                    </div>
-                    <div class="row" style=" padding: 10px;">
-                        <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
-                            suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
-                            volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
-                            velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
-                            sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
-                            eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
-                            eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
-                            varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
+                        <div class="nav-tab navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#conditions">Conditions</a>
+                            </li>
+                            <li class="nav-item nav-tab">
+                                <a class="nav-link" href="#oral">Oral Discussion</a>
+                            </li>
+                            <li class="nav-item nav-tab">
+                                <a class="nav-link" href="#submissions">Submissions</a>
+                            </li>
+                            <li class="nav-item nav-tab">
+                                <a class="nav-link" href="#fess">Fess</a>
+                            </li>
                         </div>
-                    </div>
-                    <form>
-                        <div class="row">
-                            <div class="mb-3">
-                                <label class="form-label">Subject</label>
+                    </ul>
+                </div>
 
-                                <select class="form-select" aria-label="Default select example"
-                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
+            </div>
+        </nav>
 
+        <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
+
+        <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
+        <main>
+            <div class="container"
+                style="padding-top: 100px; font-family: Samsung Sharp Sans Regular;">
+                <div class="row">
+                    <div class="col-md-6"
+                        style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 620px;">
+                        <div class="row" style="background-color: #05af4f;">
+                            <p style="color: white; font-size: 13px;"><span
+                                    style="font-size: 25px;">SUBMIT ABSTRACT</span>
+                                Cittes' identify Through Architecture
+                                and Arts (CITTA) -7th Edition</p>
+                        </div>
+                        <div class="row" style=" padding: 10px;">
+                            <div class="alert alert-warning" id="Instructions"
+                                role="alert" style="border-radius: 0px;">
+                                "Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer venenatis varius ante,
+                                nec
+                                suscipit massa. Sed facilisis vel velit nec
+                                hendrerit. Curabitur at aliquet eros. Donec
+                                volutpat, sapien ut luctus egestas, nisi ex
+                                bibendum orci, eu scelerisque massa nulla vitae
+                                velit. Quisque et justo auctor, facilisis eros
+                                eget, facilisis dolor. Vivamus a mi eu turpis
+                                sodales posuere eu non arcu. Nam aliquam ex
+                                velit, vitae bibendum nisi lacinia a. Nullam
+                                eget tortor ac purus gravida interdum. Aliquam
+                                sagittis nibh id risus aliquet, in interdum
+                                eros porttitor. Donec eu ante et quam hendrerit
+                                euismod. Etiam euismod, mauris id sagittis
+                                varius, felis quam semper risus, in pulvinar
+                                sapien metus vel lectus."
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Topics</label>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="mb-3">
+                                    <label class="form-label">Subject</label>
 
-                                <div class="multiselect-dropdown">
-                                    <i class="fa-solid fa-chevron-down icon"></i>
-                                    <div class="selectedList-container "
-                                        style="border: 1px solid black;  border-radius: 0px; "></div>
-                                    <ul class="menu ">
-                                        <li>Pink</li>
-                                        <li>Blue</li>
-                                        <li>Green</li>
-                                        <li>Yellow</li>
-                                        <li>Red</li>
-                                        <li>Orange</li>
-                                    </ul>
+                                    <select class="form-select"
+                                        aria-label="Default select example"
+                                        style="border-radius: 0px; border: 1px solid black; width:354px ;">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Subject</label>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1"
+                                        class="form-label">Topics</label>
 
-                                <select class="form-select" aria-label="Default select example"
-                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-
-                            </div>
-                            <div class="mb-3">
-                                <a href="Paper.html" type="button" class="btn btn-success">Paper</a>
-                                <a href="Abstract.html" type="button" class="btn btn-success">Abstract</a>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Paper Title</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    style="width: 354px;border: 1px solid black; border-radius: 0px;">
-                            </div>
-
-
-
-
-                            <div class="mb-3">
-                                <label>Paste Your Abstract Content here:</label>
-                                <div class="alert alert-danger" role="alert" style="border-radius: 0px;">
-                                    *Please make sure to add at least 3 keywords with your abstract*
+                                    <div class="multiselect-dropdown">
+                                        <i class="fa-solid fa-chevron-down icon"></i>
+                                        <div class="selectedList-container "
+                                            style="border: 1px solid black;  border-radius: 0px; "></div>
+                                        <ul class="menu ">
+                                            <li>Pink</li>
+                                            <li>Blue</li>
+                                            <li>Green</li>
+                                            <li>Yellow</li>
+                                            <li>Red</li>
+                                            <li>Orange</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <textarea style="width: 100%;">
+                                <div class="mb-3">
+                                    <label class="form-label">Subject</label>
+
+                                    <select class="form-select"
+                                        aria-label="Default select example"
+                                        style="border-radius: 0px; border: 1px solid black; width:354px ;">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                </div>
+                                <div class="mb-3">
+                                    <a href="Paper.html" type="button"
+                                        class="btn btn-success">Paper</a>
+                                    <a href="Abstract.html" type="button"
+                                        class="btn btn-success">Abstract</a>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1"
+                                        class="form-label">Paper Title</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1"
+                                        style="width: 354px;border: 1px solid black; border-radius: 0px;">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label>Paste Your Abstract Content here:</label>
+                                    <div class="alert alert-danger" role="alert"
+                                        style="border-radius: 0px;">
+                                        *Please make sure to add at least 3
+                                        keywords with your abstract*
+                                    </div>
+                                    <textarea style="width: 100%;">
                                         Welcome to TinyMCE!
                                     </textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label>OR Upload your Abstract File : (Allowed EXtinsions: pdf, doc, docm and
-                                    dox)</label>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input class="form-control" type="file" name="files[]" multiple>
+                                </div>
+                                <div class="mb-3">
+                                    <label>OR Upload your Abstract File :
+                                        (Allowed EXtinsions: pdf, doc, docm and
+                                        dox)</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input class="form-control"
+                                                type="file" name="files[]"
+                                                multiple>
 
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input class="form-control" type="submit" value="Upload" style="width: 150px;">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control"
+                                                type="submit" value="Upload"
+                                                style="width: 150px;">
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="mb-3">
-                                <div class="row">
-                                    <div class="col-md-6" style="width: 100%;">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Please Confirm that you Read <a href="#Instructions">Instructions</a>.
-                                        </label>
-                                    </div>
+                                <hr>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-md-6"
+                                            style="width: 100%;">
+                                            <input class="form-check-input"
+                                                type="checkbox" value
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label"
+                                                for="flexCheckDefault">
+                                                Please Confirm that you Read <a
+                                                    href="#Instructions">Instructions</a>.
+                                            </label>
+                                        </div>
 
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn btn-success"
-                                            style="border-radius: 0px; width: 150px; "> Submit Abstract</button>
+                                        <div class="col-md-6">
+                                            <button type="button"
+                                                class="btn btn-success"
+                                                style="border-radius: 0px; width: 150px; ">
+                                                Submit Abstract</button>
+                                        </div>
+
                                     </div>
 
                                 </div>
+                            </div>
 
+                        </form>
+
+                    </div>
+                    <div class="col-md-5"
+                        style="margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px;">
+                        <div class="row"
+                            style=" padding: 20px; background-color: #05af4f;">
+                            <div class="col-md-3">
+                                <i class="fa-solid fa-cloud-arrow-up"
+                                    style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
+                            </div>
+                            <div class="col-md-9" style="margin-left: -18px;">
+                                <h4
+                                    style="padding-top: 15px;  font-family: Samsung Sharp Sans bold; color: white;">
+                                    1.Abstract</h4>
 
                             </div>
+                            <p style="color: white;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. </p>
                         </div>
+                        <hr>
+                        <div class="row"
+                            style="padding-top: 20px; padding: 10px;">
+                            <div class="col-md-2">
+                                <i class="fa-solid fa-eye"
+                                    style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
 
+                            </div>
+                            <div class="col-md-10">
+                                <h4
+                                    style="padding-top: 15px; font-family: Samsung Sharp Sans bold;">
+                                    2.Status</h4>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. </p>
+                        </div>
+                        <hr>
+                        <div class="row"
+                            style="padding-top: 20px; padding: 10px;">
+                            <div class="col-md-2">
+                                <i class="fa-solid fa-upload"
+                                    style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                            </div>
+                            <div class="col-md-10">
+                                <h4
+                                    style="padding-top: 15px ; font-family: Samsung Sharp Sans bold;">
+                                    3.Paper</h4>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. </p>
+                        </div>
+                        <hr>
+                        <div class="row"
+                            style="padding-top: 20px; padding: 10px;">
+                            <div class="col-md-2">
+                                <i class="fa-solid fa-laptop"
+                                    style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                            </div>
+                            <div class="col-md-10">
+                                <h4
+                                    style="padding-top: 15px; font-family: Samsung Sharp Sans bold;">
+                                    4.Revision</h4>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. </p>
+                        </div>
+                        <hr>
+                        <div class="row"
+                            style="padding-top: 20px; padding: 10px;">
+                            <div class="col-md-2">
+                                <i class="fa-solid fa-link"
+                                    style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                            </div>
+                            <div class="col-md-10">
+                                <h4
+                                    style="padding-top: 15px; font-family: Samsung Sharp Sans bold;">
+                                    5.Result</h4>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. </p>
+                        </div>
+                        <div class="row"
+                            style="padding-top: 20px; padding: 10px;">
+                            <button type="button" class="btn btn-success"
+                                style="border-radius: 0px;"><i
+                                    class="fa-solid fa-file-circle-check"></i>
+                                Download Writting Template</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-----------------------------------------------------------end Main------------------------------------------------------------------------->
+        <!------------------------------------------------------------start footer-------------------------------------------------------------------->
+        <footer>
+            <div class="container "
+                style="text-align: center; padding-top: 50px; justify-content: center;">
+
+                <h4 style="padding-top: 15px;"
+                    style="font-family: Samsung Sharp Sans bold;">Sbuscribe to
+                    Our <span
+                        style="color: #05af4f;">Newsletter
+                    </span></h4>
+                <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum
+                    dolor sit amet,
+                    consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet.</p>
+                <div class="row justify-content-center">
+                    <form action="#" method="post" name="sign-up"
+                        style="width: 700px; border-radius: 0px; ">
+                        <input type="email" class="input" id="email"
+                            name="email" placeholder="Type Your Email here"
+                            style="border-radius: 0px;  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                        <input type="submit" class="button" id="submit"
+                            value="SEND MAIL"
+                            style="border-radius: 0px; background-color: #05af4f; color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                     </form>
 
                 </div>
-                <div class="col-md-5"
-                    style="margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px;">
-                    <div class="row" style=" padding: 20px; background-color: #05af4f;">
-                        <div class="col-md-3">
-                            <i class="fa-solid fa-cloud-arrow-up"
-                                style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
-                        </div>
-                        <div class="col-md-9" style="margin-left: -18px;">
-                            <h4 style="padding-top: 15px;  font-family: Samsung Sharp Sans bold; color: white;">
-                                1.Abstract</h4>
-
-                        </div>
-                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-eye"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 2.Status</h4>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-upload"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h4 style="padding-top: 15px ; font-family: Samsung Sharp Sans bold;"> 3.Paper</h4>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-laptop"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 4.Revision</h4>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-link"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h4 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 5.Result</h4>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <button type="button" class="btn btn-success" style="border-radius: 0px;"><i
-                                class="fa-solid fa-file-circle-check"></i> Download Writting Template</button>
-
-                    </div>
-                </div>
             </div>
-        </div>
 
+            <div class="container-fluid" style="padding-top: 50px;">
+                <div class="row">
+                    <div class="col-md-6 " style="text-align: center;">
 
-
-    </main>
-    <!-----------------------------------------------------------end Main------------------------------------------------------------------------->
-    <!------------------------------------------------------------start footer-------------------------------------------------------------------->
-    <footer>
-        <div class="container " style="text-align: center; padding-top: 50px; justify-content: center;">
-
-
-            <h4 style="padding-top: 15px;" style="font-family: Samsung Sharp Sans bold;">Sbuscribe to Our <span
-                    style="color: #05af4f;">Newsletter
-                </span></h4>
-            <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean euismod bibendum
-                laoreet.</p>
-            <div class="row justify-content-center">
-                <form action="#" method="post" name="sign-up" style="width: 700px; border-radius: 0px; ">
-                    <input type="email" class="input" id="email" name="email" placeholder="Type Your Email here"
-                        style="border-radius: 0px;  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                    <input type="submit" class="button" id="submit" value="SEND MAIL"
-                        style="border-radius: 0px; background-color: #05af4f; color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                </form>
-
-            </div>
-        </div>
-
-        <div class="container-fluid" style="padding-top: 50px;">
-            <div class="row">
-                <div class="col-md-6 " style="text-align: center;">
-
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: end;">
-                            <img src="img/63232073802.png" style="width: 50px; width:200px ; ">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: end;">
+                                <img src="img/63232073802.png"
+                                    style="width: 50px; width:200px ; ">
+                            </div>
+                            <div class="col-md-6"
+                                style="text-align: start; padding-top: 20px;">
+                                <p>IEREK Copyright @ 2023 - Web Template</p>
+                            </div>
                         </div>
-                        <div class="col-md-6" style="text-align: start; padding-top: 20px;">
-                            <p>IEREK Copyright @ 2023 - Web Template</p>
-                        </div>
+
+                    </div>
+                    <div class="col-md-6" style="text-align: center;">
+                        <i class="fa-brands fa-facebook-f"
+                            style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+                        <i class="fa-brands fa-twitter"
+                            style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+                        <i class="fa-brands fa-instagram"
+                            style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
                     </div>
 
-
-                </div>
-                <div class="col-md-6" style="text-align: center;">
-                    <i class="fa-brands fa-facebook-f"
-                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
-                    <i class="fa-brands fa-twitter"
-                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
-                    <i class="fa-brands fa-instagram"
-                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
                 </div>
 
             </div>
+        </footer>
+        <!--------------------------------------------------------end footer----------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------JS----------------------------------------------------------------------------------------------->
 
-        </div>
-    </footer>
-    <!--------------------------------------------------------end footer----------------------------------------------------------------------------------------------->
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
-    <script src="https://cdn.tiny.cloud/1/lbn5nyw5r6ak0y883ixfucz9gt1wa7jxesmv8whz6zqlvqfj/tinymce/6/tinymce.min.js"
-        referrerpolicy="origin"></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+        <script
+            src="https://cdn.tiny.cloud/1/lbn5nyw5r6ak0y883ixfucz9gt1wa7jxesmv8whz6zqlvqfj/tinymce/6/tinymce.min.js"
+            referrerpolicy="origin"></script>
 
-    <script>
+        <script>
         let dropdown = document.querySelector(".multiselect-dropdown");
         let menu = document.querySelector(".menu");
         let listContainer = document.querySelector(".selectedList-container");
@@ -397,7 +460,8 @@
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
         });
     </script>
+        <!--------------------------------------------------------END JS----------------------------------------------------------------------------------------------->
 
-</body>
+    </body>
 
 </html>
