@@ -87,8 +87,8 @@
 
 <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
 <main style="padding-top: 50px;">
-<div class="container" style=" font-family: Samsung Sharp Sans Regular;">
-    <h1 style="font-family:Samsung Sharp Sans Bold;"> View Abstract</h1>
+<div class="container" style=" font-family: Samsung Sharp Sans Regular;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; border-radius:50px;">
+    <h1 style="font-family:Samsung Sharp Sans Bold; padding-top: 50px;"> View Abstract</h1>
     <div class="row" style="padding-top: 30px;">
         <div class="col-md-1" style="text-align: end;">
             <h4 style="font-family:Samsung Sharp Sans Bold;">Title: </h4> 
@@ -174,18 +174,18 @@
         </div>
         <div class="row" style="padding-top: 30px;">
             <div class="col-md-1" style="text-align: end;  padding-left: 25px;">
-                <h4 style="font-family:Samsung Sharp Sans Bold;">Reviewer: </h4> 
+                <h4 style="font-family:Samsung Sharp Sans Bold;">Files </h4> 
             </div>
             <div class="col-md-5" style="text-align: start; padding-left: 70px;">
                 <div class="row">
                     <div class="col-sm-3" >
-                        <div class="tag"><span class="tag__name">test</span></div>
+                        <div class="tag"><span class="tag__name"><a href="#" style="color: white; display: contents;">test</a></span></div>
                     </div>
                     <div class="col-sm-3" >
-                        <div class="tag"><span class="tag__name">test</span></div>
+                        <div class="tag"><span class="tag__name"><a href="#" style="color: white; display: contents;">test</a></span></div>
                     </div>
                     <div class="col-sm-3" >
-                        <div class="tag"><span class="tag__name">test</span></div>
+                        <div class="tag"><span class="tag__name"><a href="#" style="color: white; display: contents;">test</a></span></div>
                     </div>
                 </div>
     
@@ -193,7 +193,7 @@
             </div>
             <div class="row" style="padding-top: 30px;">
                 <div class="col-md-1" style="text-align: end;  padding-left: 25px;">
-                    <h4 style="font-family:Samsung Sharp Sans Bold;">Statues: </h4> 
+                    <h4 style="font-family:Samsung Sharp Sans Bold;">Status: </h4> 
                 </div>
                 <div class="col-md-5" style="text-align: start; padding-left: 60px; width: 180px;">
                     <div class="tag" style=" background-color: green;  "><span class="tag__name"  >Accepted</span></div>
@@ -271,56 +271,6 @@
             referrerpolicy="origin"></script>
 
         <script>
-        let dropdown = document.querySelector(".multiselect-dropdown");
-        let menu = document.querySelector(".menu");
-        let listContainer = document.querySelector(".selectedList-container");
-        let selectedItems = [];
-
-        dropdown.onclick = (event) => {
-            event.currentTarget.classList.toggle("show");
-        };
-
-        menu.addEventListener("click", (event) => {
-            event.stopPropagation();
-
-            let item = event.target.innerHTML;
-
-            if (!selectedItems.includes(item)) {
-                selectedItems.push(item);
-                showSelectedItems(item);
-            }
-        });
-
-        function showSelectedItems(item) {
-            let itemSpan = document.createElement("span");
-            let crossIcon = document.createElement("i");
-
-            itemSpan.innerHTML = item;
-            itemSpan.classList.add("selectedItem");
-
-            crossIcon.classList.add("fa-solid", "fa-xmark");
-            itemSpan.append(crossIcon);
-
-            itemSpan.addEventListener("click", deleteItem);
-            listContainer.append(itemSpan);
-        }
-
-        function deleteItem(event) {
-            event.stopPropagation();
-            let item = event.currentTarget;
-
-            selectedItems = selectedItems.filter((value) => value !== item.textContent);
-
-            item.classList.add("zoomOut");
-
-            setTimeout(() => {
-                item.remove();
-                item.classList.remove("zoomOut");
-            }, 390);
-        }
-
-
-
 
         tinymce.init({
             selector: 'textarea',
