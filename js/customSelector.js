@@ -30,7 +30,6 @@ document.querySelector(".nav-tab").addEventListener("click", (e) => {
 })
 
 
-
 selector.addEventListener("click", (e) => {
     target = e.target
 

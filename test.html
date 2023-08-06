@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <button id="btn1">Toggle Content</button>
+  <button id="btn2">Toggle Content</button>
+  
+  <div id="content1" class="content" >
+    <!-- Content 1 -->
+    <h2>Content 1</h2>
+    <p>This is the first content.</p>
+  </div>
+  
+  <div id="content2" class="content" style="display: none;">
+    <!-- Content 2 -->
+    <h2>Content 2</h2>
+    <p>This is the second content.</p>
+  </div>
+
+  <script>
+   var btn1 = document.getElementById("btn1");
+   var btn2 = document.getElementById("btn2");
+
+   var cont1 = document.getElementById("content1");
+   var cont2 = document.getElementById("content2");
+
+
+
+   btn1.addEventListener("click", function(){
+    cont1.style.display='block';
+   cont2.style.display='none';
+});
+btn2.addEventListener("click", function(){
+    cont1.style.display='none';
+   cont2.style.display='block';
+});
+  </script>
+</body>
+</html>
