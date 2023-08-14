@@ -88,10 +88,9 @@ body {
 #selector-btn {
   display: flex;
   gap: 5px;
-  position: absolute;
-  top: -50px;
-  left: 10%;
-  transform: translate(-2.5%, 0%);
+  margin: auto;
+  margin-top: -90px;
+  width: fit-content;
 }
 
 .checkbox-button input[type=checkbox] {
@@ -137,7 +136,7 @@ body {
 
 #artcile-view {
   padding: 50px;
-  position: relative;
+
   background-color: #eef3ec;
   min-height: 300px;
   justify-content: center;
@@ -362,3 +361,438 @@ form {
 .selectedItem{
   padding-right: 10px;
 }
+.books{
+  width: 120px;
+}
+#logo{
+  width: 678px; padding-top: 20px; padding-left: 50px;
+}
+#btns-banner{
+  text-align: right;  ;
+}
+#btn-ierek1-banner{
+  border-radius: 50px; width: 200px; font-size: 25px; background-color: #05af4f; color: white; font-family: Samsung Sharp Sans Regular; 
+}
+#btn-ierek2-banner{
+  border-radius: 50px;  width: 200px; font-size: 25px; font-family: Samsung Sharp Sans Regular;
+}
+#banner-text{
+  width: 100%; color: white; font-weight: bold; text-align: center; padding-left: 50px;font-family:Samsung Sharp Sans Bold; font-size: 55px;
+}
+#banner{
+  background-image: url('../img/4.png');
+  height: 500px;
+
+  background-size: cover;
+}
+.tab{
+  font-family: Samsung Sharp Sans bold; width: 218px;
+}
+#footer-text{
+  text-align: start; padding-top: 20px;
+}
+#image-footer{
+  width: 50px; width:200px ;
+}
+#footer-col{
+  text-align: end;
+}
+#image-banner{
+  width: 500px;
+}
+#abstract-2{
+  margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px;
+}
+#image-footer{
+  text-align: end;
+}
+#text-footer{
+  text-align: start; padding-top: 20px;
+}
+
+#abstract-container{
+  padding-top: 100px; font-family: Samsung Sharp Sans Regular;
+}
+#abstract-subject{
+  border-radius: 0px; border: 1px solid black; width:354px ;
+}
+#textarea-tiny{
+  width: 100%;
+}
+#paper-2{
+  margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px;
+}
+#paper-container{
+  padding-top: 100px; font-family: Samsung Sharp Sans Regular;
+}
+#footer-paper-text{
+  text-align: start; padding-top: 20px;
+}
+#view-paper-2{
+  margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px; width: 400px;
+}
+#view-paper-1{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 700px;
+}
+.text-view{
+  text-align: end;
+
+}
+.value-text{
+  text-align: start; padding-left: 48px;
+}
+.value-text-2{
+  text-align: start; padding-left: 90px;
+
+}
+.Commented-publisher{
+  padding-top: 30px;
+}
+.Commented-publisher-2{
+  padding-left: 150px; padding-right: 100px;
+}
+#text-value{
+  padding-left: 50px;
+}
+#text-value2{
+  padding-left: 100px;
+}
+#Commentes{
+  padding-left:100px ; padding-right: 100px; padding-top: 20px; background-color: rgb(209, 202, 202); width: 600px;
+}
+#result-container{
+  padding-top: 100px; font-family: Samsung Sharp Sans Regular;
+}
+#result-1{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 700px; height: 400px;
+}
+#result-2{
+  margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px; width: 400px;
+}
+/******************responsive***********************************/
+
+    /* Styles for tablets (portrait and landscape) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  #header{
+    justify-content: center;
+  }
+  #logo{
+    width: 700px;
+  }
+  .books{
+    width: 80px;
+  }
+  #btn-ierek1-banner{
+    width: 150px; font-size: 15px; margin-left: 25px; 
+  }
+  #btn-ierek2-banner{
+    width: 150px; font-size: 15px;  margin-left: 20px;
+  }
+  #banner-text{
+    font-size: 30px;
+  }
+  #banner{
+    height: 300px;
+  }
+  #video-banner{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  #video-banner2{
+    width: 100%;
+
+  }
+#btns-banner{
+  margin-right: -30px;
+}
+
+#checkbox2{
+  width: 150px;
+}
+#tab2{
+  font-size: 10px;
+}
+#tab3{
+  font-size: 13px;
+}
+#checkbox3{
+  width: 150px;
+}
+.tab{
+  width: 150px;
+  font-size: 10px;
+}
+#footer-text{
+ font-size: 15px;
+}
+#footer-col{
+  width: 180px;
+}
+#view-paper-2{
+  margin-top: 30px;
+  margin-left: 160px;
+}
+#result-2{
+  margin-top: 30px;
+  margin-left: 150px;
+}
+}
+@media (max-width: 772px) {
+  #selector-btn{
+    gap: 0 !important ;
+    width: 100%;
+  
+  }
+  .checkbox-button label{
+    width: 70px;
+    font-size: 7px;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 20px;
+  }
+#checkbox-tab2{
+  padding-top: 10px;
+}
+#checkbox-tab3{
+  font-size: 6px;
+}
+#abstract-2{
+  margin-left: 0px;
+  margin-top: 30px;
+  height: 1000px;
+  width: 70%;
+  margin-left: 70px;
+}
+#abstract-1{
+  width: 100%;
+margin-left: 35px;
+}
+#paper-1{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 620px;
+}
+#paper-container{
+  padding-top: 30px; font-family: Samsung Sharp Sans Regular;
+}
+#paper-1{
+ width: 100%; 
+ 
+}
+#paper-2{
+  width: 70%;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#footer-paper-text{
+  padding-left: 20px; #selector-btn{
+    gap: 0 !important ;
+    width: 100%;
+  
+  }
+  .checkbox-button label{
+    width: 70px;
+    font-size: 7px;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 20px;
+  }
+#checkbox-tab2{
+  padding-top: 10px;
+}
+#checkbox-tab3{
+  font-size: 6px;
+}
+#abstract-2{
+  margin-left: 0px;
+  margin-top: 30px;
+  height: 1000px;
+  width: 70%;
+  margin-left: 70px;
+}
+#abstract-1{
+  width: 100%;
+margin-left: 35px;
+}
+#paper-1{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 620px;
+}
+#paper-container{
+  padding-top: 30px; font-family: Samsung Sharp Sans Regular;
+}
+#paper-1{
+ width: 100%; 
+ 
+}
+#paper-2{
+  width: 70%;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#footer-paper-text{
+  padding-left: 20px;
+}
+
+}
+}
+/**************************Mobile**********************/
+@media (max-width: 414px) {
+
+  #header{
+    justify-content: center;
+  }
+  #logo{
+    width: 350px; padding-left: 20px; 
+  }
+  .books{
+    width: 80px;
+  }
+  .banner-mb{
+    width: 100%;
+  }
+  #btns-banner{
+    width: 50%;
+  }
+  #btns-banner2{
+    width: 50%;
+  }
+  #book-banner{
+    width: 30%;
+  }
+  #book-banner2{
+    width: 30%;
+  }
+  #book-banner3{
+    width: 30%;
+  }
+  #all-books{
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 60px;
+  }
+  #btn-ierek1-banner{
+    width: 150px; font-size: 15px; margin-left: 25px; 
+  }
+  #btn-ierek2-banner{
+    width: 150px; font-size: 15px;  margin-left: 20px;
+  }
+  #banner-text{
+    font-size: 30px;
+  }
+  #banner{
+    height: 600px;
+  }
+  #video-banner{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  #image-banner{
+    width: 350px;
+  }
+  #video-section{
+    width: 350px;
+  }
+  #video-banner2{
+    width: 100%;
+
+  }
+#btns-banner{
+  margin-right: -30px;
+}
+
+#checkbox2{
+  width: 150px;
+}
+#tab2{
+  font-size: 10px;
+}
+#tab3{
+  font-size: 13px;
+}
+#checkbox3{
+  width: 150px;
+}
+.tab{
+  width: 150px;
+  font-size: 10px;
+}
+#footer-text{
+ font-size: 15px;
+}
+#footer-col{
+  width: 180px;
+}
+#abstract-2{
+  margin-left: 40px;
+  margin-top: 30px;
+  height: 1500px;
+}
+#abstract-1{
+  width: 350px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+#image-footer{
+padding-left: 80px;}
+#text-footer{
+  text-align: center;
+}
+#abstract-container{
+  padding-top: 50px;
+  justify-content: center;
+  padding-left: 0px;
+}
+#abstract-subject{
+  width: 300px;
+}
+#textarea-tiny{
+  width: 50px;
+}
+#paper-2{
+  margin-left: 0px;
+  margin-top: 30px;
+  height: 1500px;
+}
+#view-paper-contanier{
+  text-align: center;
+}
+.text-view{
+  text-align: center;
+}
+.Commented-publisher{
+
+width: 350px;
+
+}
+.Commented-publisher-2{
+  padding-: 0px;
+}
+#text-value2{
+  padding-left: 40px;
+}
+#Commentes{
+  padding-left:40px ; padding-right: 50px; padding-top: 20px; background-color: rgb(209, 202, 202); width: 330px;
+}
+#view-paper-2{
+  height: 1250px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#view-paper-1{
+  margin-left: 7px;
+}
+#result-container{
+  padding-top: 20px;
+}
+#result-1{
+  height: 500px;
+}
+#result-2{
+  margin-left: 0px;
+  height: 1250px;
+}
+
+}
+

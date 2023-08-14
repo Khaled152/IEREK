@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Future Academy">
+  <meta name="description" >
   <meta name="keywords" content="HTML,CSS,bootstrap,JavaScript,education,CS,IS">
   <meta name="author" content="Error 404">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,10 @@
   <link href="css/style.css" rel="stylesheet">
 
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  
+
 
   <!-- Bootstrap CSS -->
 
@@ -28,6 +32,42 @@
             overflow: hidden;
             max-height: 100px; /* Adjust the height to control the visible content */
         }
+  
+  .owl-item .item .card{
+      margin: auto;
+  }
+  .owl-item .item {
+    margin: auto !important;
+  }
+  @media(max-width:500px) {
+    .owl-item .item .card{
+      width: 100% !important;
+  }
+  }
+
+  .leftBtn , .rightBtn{
+    color: rgb(33, 90, 139);
+  }
+
+  .owl-prev ,.owl-next{
+    width: 60px;
+    position: absolute;
+  }
+  .navs{
+    width: 100%;
+  }
+
+  .owl-prev{
+    top: 35%;
+    left: -70px;
+  }
+  .owl-next{
+    top: 35%;
+    right: -70px;
+  }
+  .custom-coursel{
+    position: relative;
+  }
 </style>
 
 </head>
@@ -35,7 +75,7 @@
 <body>
   <a href="#articleViwer" id="articleHref"></a>
   <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
-  <nav class="navbar navbar-expand-lg navbar-light ">
+<!--<nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
           style="width: 678px; padding-top: 20px; padding-left: 50px;"></a>
@@ -66,7 +106,39 @@
       </div>
 
     </div>
+  </nav>-->
+
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container-fluid "id="header">
+      <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
+        style="" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link "  href="#test">About Us</a>
+          </li>
+          <div class="nav-tab navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#conditions">Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#oral">Oral Discussion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#submissions">Submissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fess">Fess</a>
+          </li>
+        </div>
+        </ul>
+      </div>
+    </div>
   </nav>
+  
 
   <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
 
@@ -84,39 +156,38 @@
         <i class="fa-brands fa-instagram"></i>
       </div>
     </div>
-    <div class="continer-fulid  banner"
-      style="background-image: url('img/4.png'); height: 500px; background-size: cover;">
+    <div class="continer-fulid  " id="banner"
+      style="">
 
 
-      <div class="row" style="padding-top: 100px;">
-        <div class="col-md-6 Justify-content-center">
-          <h1 class="display-1 font"
-            style="width: 100%; color: white; font-weight: bold; text-align: center; padding-left: 50px;font-family:Samsung Sharp Sans Bold; font-size: 55px;">Your
+      <div class="row" style="padding-top: 100px;"  >
+        <div class="col-md-6 Justify-content-center banner-mb" >
+          <h1 class="display-1 font" id="banner-text" style="">Your
             Research,<br> Swiftly published</h1>
-          <div class="row" style="padding-top: 20px;">
-            <div class="col-md-6" style="text-align: right;">
-              <button type="button" class="btn"
-                style="border-radius: 50px; width: 200px; font-size: 25px; background-color: #05af4f; color: white; font-family: Samsung Sharp Sans Regular;">Register</button>
+          <div class="row" style="padding-top: 20px; justify-content: center;" >
+            <div class="col-md-6" style="" id="btns-banner">
+              <button type="button" class="btn" id="btn-ierek1-banner"
+                style="">Register</button>
             </div>
-            <div class="col-md-6">
-              <button type="button" class="btn btn-light"
-                style="border-radius: 50px;  width: 200px; font-size: 25px; font-family: Samsung Sharp Sans Regular;">Submit</button>
+            <div class="col-md-6" id="btns-banner2">
+              <button type="button" class="btn btn-light" id="btn-ierek2-banner"
+                style="">Submit</button>
 
             </div>
 
           </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 banner-mb" id="all-books" >
           <div class="row">
-            <div class="col-md-3">
-              <img src="img/1.png" style="width: 120px;  ">
+            <div class="col-md-3 " id="book-banner">
+              <img src="img/1.png"  class="books" >
             </div>
-            <div class="col-md-3">
-              <img src="img/2.png" style="width: 120px;  margin-right: 100px; ">
+            <div class="col-md-3" id="book-banner2">
+              <img src="img/2.png"  class="books" style="  margin-right: 100px; ">
             </div>
-            <div class="col-md-3">
-              <img src="img/3.png" style="width: 120px; ">
+            <div class="col-md-3" id="book-banner3">
+              <img src="img/3.png" class="books" >
             </div>
           </div>
         </div>
@@ -129,7 +200,7 @@
     </div>
 
 
-<div class="container"style=" box-shadow: 0px 2px 20px 5px rgb(219, 216, 216); padding: 25px;"> 
+<div class="container custom-coursel"style=" box-shadow: 0px 2px 20px 5px rgb(219, 216, 216); padding: 25px;" > 
 
   <div class="row">
     <div class="col-md-12">
@@ -180,27 +251,26 @@
 
     <div class="container" style="padding-top: 50px;">
       <div class="row">
-        <div class="col-md-6">
-          <img src="img/Capture2.JPG" style="width: 500px;">
+        <div class="col-md-6" id="video-banner">
+          <img src="img/Capture2.JPG"  id="image-banner" style="">
 
         </div>
-        <div class="col-md-6" style="text-align: center; ">
+        <div class="col-md-6" style="text-align: center; " id="video-banner2">
 
-          <iframe width="550" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="border-radius: 30px;">
+          <iframe width="550" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" id="video-section" style="border-radius: 30px;">
           </iframe>
         </div>
       </div>
-
     </div>
 
-    <div class="container-fluid Justify-content-center text-center">
-      <div id="card1" class="carousel slide" data-ride="carousel">
 
-        <div class="carousel-inner">
-
-          <div class="carousel-item active Justify-content-center">
-            <div class="row Justify-content-center" style="justify-content: center;">
-              <div class="col-3">
+    <div class="continer justify-content-center" id="card1">
+   
+      <div class="row justify-content-center p-5">
+          <div class="col-md-9 col-12">
+            <div class="owl-carousel justify-content-center text-center">
+              <div class="item">
+                
                 <div class="card" style="border-color: white; text-align: center;">
                   <div class="card-body">
                     <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
@@ -225,56 +295,28 @@
 
                   </div>
                 </div>
+                 
               </div>
-              <div class="col-3">
+
+              <div class="item">
+                
                 <div class="card" style="border-color: white; text-align: center;">
                   <div class="card-body">
-                    <h5 class="card-title"style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet,
+                    <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
+                    <p class="card-text" style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit. Aenean euismod bibendum
                       laoreet. Proin gravida dolor sit amet lacus accumsan et
                       viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                    <p class="discription"style="font-family: Samsung Sharp Sans Regular;">
+                    <p class="discription" style="font-family: Samsung Sharp Sans Regular;">
 
 
-          
-                      Nulla varius tempor velit, sed pellentesque justo suscipit ut. Vivamus placerat vitae mauris vel
-                      facilisis. In rutrum velit sed sapien pharetra rutrum. Aenean non nunc purus. Nam eu erat laoreet,
-                      dignissim urna non, imperdiet purus. Vestibulum convallis sit amet nibh ac tempus. Sed sit amet
-                      bibendum purus, sit amet pellentesque enim. Fusce vitae hendrerit ante. Nam vulputate convallis
-                      odio. Ut non suscipit urna. Morbi tincidunt enim non lorem placerat, eget vehicula nulla
-                      dignissim. Duis rutrum felis massa, ac feugiat quam vehicula id. Cras euismod magna vitae nibh
-                      tempor pharetra. Maecenas eu mauris mi. Maecenas et massa arcu. Curabitur imperdiet augue vel
-                      auctor mollis.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+                      sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+                      accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+                      massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+                      Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
 
-                      Morbi in ex quam. Vivamus vitae est leo. Sed feugiat leo ut libero facilisis dictum. Curabitur
-                      luctus, tellus non rutrum tempor, eros orci accumsan eros, ut cursus libero ante vel massa.
-                      Vivamus maximus libero eu purus feugiat, eget porttitor elit facilisis. Nam gravida erat eget
-                      tellus vestibulum, commodo mattis nibh ornare. Sed semper nunc ut leo volutpat accumsan. Ut
-                      commodo finibus congue. Pellentesque vestibulum et diam vitae fringilla. In hac habitasse platea
-                      dictumst. Nulla nunc diam, auctor non efficitur eu, tempus in est. Etiam libero odio, pharetra
-                      eget dui mollis, mollis feugiat dui. Curabitur tincidunt odio vitae purus fringilla varius.
-
-                      In hac habitasse platea dictumst. Nullam iaculis quam sagittis finibus suscipit. In in sem quis
-                      orci consequat ornare. Aliquam aliquam quam sed dui pharetra sodales. Nam maximus, erat in auctor
-                      varius, ex neque facilisis lorem, vel dictum sem justo vitae tellus. Vivamus porttitor, justo nec
-                      cursus vulputate, diam elit dictum ante, at finibus ex ex ac sapien. Suspendisse egestas, turpis
-                      ac auctor hendrerit, odio lectus ultrices metus, quis hendrerit lorem libero ut arcu.
-
-                      Duis sed augue neque. Maecenas pretium dui sed congue scelerisque. Nunc malesuada blandit quam sed
-                      porttitor. In ultrices velit sed dolor molestie vehicula. Cras dictum venenatis augue, id
-                      consectetur purus ultricies eu. Morbi eleifend augue at enim interdum, eget condimentum leo
-                      rutrum. Fusce eu aliquam justo. Ut venenatis tincidunt nunc. Nulla blandit, lacus a iaculis
-                      rutrum, purus arcu porta ipsum, vel condimentum augue augue ut tortor. Aenean luctus ligula id
-                      ornare laoreet. Fusce a lacus ac quam interdum facilisis in ac lectus. Quisque mattis pellentesque
-                      nisi vitae mattis. Nunc ultrices dui erat, nec elementum massa viverra rhoncus. Suspendisse
-                      dignissim est non rhoncus ornare. Pellentesque eu orci libero.
-
-                      Sed quis metus aliquet, consectetur nulla nec, interdum justo. Proin mauris sapien, tempor vel
-                      finibus id, euismod eu lectus. In id diam id lorem finibus dapibus. Pellentesque ullamcorper metus
-                      sed felis lobortis placerat. Maecenas egestas, metus ut porttitor accumsan, turpis velit imperdiet
-                      libero, eget sagittis justo mauris non sapien. Nunc ornare viverra neque, at maximus nibh faucibus
-                      vel. Ut dignissim justo sit amet scelerisque rhoncus. Donec euismod venenatis est sit amet auctor.
+                     ctor.
                       Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
                     </p>
                     <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
@@ -282,16 +324,20 @@
 
                   </div>
                 </div>
+                 
               </div>
-              <div class="col-3">
+
+
+              <div class="item">
+                
                 <div class="card" style="border-color: white; text-align: center;">
                   <div class="card-body">
-                    <h5 class="card-title"style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
-                    <p class="card-text"style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
+                    <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
+                    <p class="card-text" style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit. Aenean euismod bibendum
                       laoreet. Proin gravida dolor sit amet lacus accumsan et
                       viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                    <p class="discription"style="font-family: Samsung Sharp Sans Regular;">
+                    <p class="discription" style="font-family: Samsung Sharp Sans Regular;">
 
 
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
@@ -300,30 +346,7 @@
                       massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
                       Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
 
-                      Nam enim ipsum, porta ac pretium eget, vulputate euismod eros. Nunc urna enim, posuere sed laoreet
-                      sed, tempor et nibh. Ut viverra malesuada aliquam. Phasellus sed dolor dui. Etiam faucibus blandit
-                      sollicitudin. Curabitur ornare ipsum nec diam pharetra tempor. Nam interdum lectus sit amet diam
-                      ultrices mollis ut vel urna. Fusce rutrum tempus laoreet. In hendrerit faucibus orci, vel semper
-                      magna posuere sed. Proin quis feugiat metus, nec tempus velit. Aenean tincidunt sed orci at
-                      laoreet. Proin a nibh at urna imperdiet ullamcorper et ac justo.
-
-                    
-                  
-
-                      Duis sed augue neque. Maecenas pretium dui sed congue scelerisque. Nunc malesuada blandit quam sed
-                      porttitor. In ultrices velit sed dolor molestie vehicula. Cras dictum venenatis augue, id
-                      consectetur purus ultricies eu. Morbi eleifend augue at enim interdum, eget condimentum leo
-                      rutrum. Fusce eu aliquam justo. Ut venenatis tincidunt nunc. Nulla blandit, lacus a iaculis
-                      rutrum, purus arcu porta ipsum, vel condimentum augue augue ut tortor. Aenean luctus ligula id
-                      ornare laoreet. Fusce a lacus ac quam interdum facilisis in ac lectus. Quisque mattis pellentesque
-                      nisi vitae mattis. Nunc ultrices dui erat, nec elementum massa viverra rhoncus. Suspendisse
-                      dignissim est non rhoncus ornare. Pellentesque eu orci libero.
-
-                      Sed quis metus aliquet, consectetur nulla nec, interdum justo. Proin mauris sapien, tempor vel
-                      finibus id, euismod eu lectus. In id diam id lorem finibus dapibus. Pellentesque ullamcorper metus
-                      sed felis lobortis placerat. Maecenas egestas, metus ut porttitor accumsan, turpis velit imperdiet
-                      libero, eget sagittis justo mauris non sapien. Nunc ornare viverra neque, at maximus nibh faucibus
-                      vel. Ut dignissim justo sit amet scelerisque rhoncus. Donec euismod venenatis est sit amet auctor.
+                     ctor.
                       Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
                     </p>
                     <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
@@ -331,22 +354,20 @@
 
                   </div>
                 </div>
+                 
               </div>
-            </div>
-          </div>
 
 
-          <div class="carousel-item">
-            <div class="row Justify-content-center" style="justify-content: center;">
-              <div class="col-3">
+              <div class="item">
+                
                 <div class="card" style="border-color: white; text-align: center;">
                   <div class="card-body">
-                    <h5 class="card-title"style="font-family: Samsung Sharp Sans Regular;">Card 2</h5>
-                    <p class="card-text"style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
+                    <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
+                    <p class="card-text" style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit. Aenean euismod bibendum
                       laoreet. Proin gravida dolor sit amet lacus accumsan et
                       viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                    <p class="discription"style="font-family: Samsung Sharp Sans Regular;">
+                    <p class="discription" style="font-family: Samsung Sharp Sans Regular;">
 
 
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
@@ -355,57 +376,28 @@
                       massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
                       Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
 
-                      Nam enim ipsum, porta ac pretium eget, vulputate euismod eros. Nunc urna enim, posuere sed laoreet
-                      sed, tempor et nibh. Ut viverra malesuada aliquam. Phasellus sed dolor dui. Etiam faucibus blandit
-                      sollicitudin. Curabitur ornare ipsum nec diam pharetra tempor. Nam interdum lectus sit amet diam
-                      ultrices mollis ut vel urna. Fusce rutrum tempus laoreet. In hendrerit faucibus orci, vel semper
-                      magna posuere sed. Proin quis feugiat metus, nec tempus velit. Aenean tincidunt sed orci at
-                      laoreet. Proin a nibh at urna imperdiet ullamcorper et ac justo.
-
-          
-
-                      Proin dictum, justo sit amet porta lacinia, nunc dolor lacinia ligula, eget faucibus est est vel
-                      turpis. Cras rhoncus sollicitudin enim, a gravida tortor finibus eget. Mauris non massa vel ex
-                      imperdiet rutrum vitae sed elit. Duis a magna quis ligula pharetra convallis. Nam malesuada
-                      tristique mi, sed luctus purus tempus in. Pellentesque porttitor sed augue non scelerisque.
-                      Praesent at sapien nibh. Cras vitae tempor nisl, condimentum rutrum nunc. Aenean ante turpis,
-                      dapibus sed mollis sed, cursus in est. Fusce fringilla molestie sapien non dictum. Curabitur sit
-                      amet placerat felis, at mollis orci. Ut commodo, nisi vel congue posuere, turpis turpis pretium
-                      odio, id suscipit odio ex lacinia libero.
-
-                      Nulla varius tempor velit, sed pellentesque justo suscipit ut. Vivamus placerat vitae mauris vel
-                      facilisis. In rutrum velit sed sapien pharetra rutrum. Aenean non nunc purus. Nam eu erat laoreet,
-                      dignissim urna non, imperdiet purus. Vestibulum convallis sit amet nibh ac tempus. Sed sit amet
-                      bibendum purus, sit amet pellentesque enim. Fusce vitae hendrerit ante. Nam vulputate convallis
-                      odio. Ut non suscipit urna. Morbi tincidunt enim non lorem placerat, eget vehicula nulla
-                      dignissim. Duis rutrum felis massa, ac feugiat quam vehicula id. Cras euismod magna vitae nibh
-                      tempor pharetra. Maecenas eu mauris mi. Maecenas et massa arcu. Curabitur imperdiet augue vel
-                      auctor mollis.
-
-                      Morbi in ex quam. Vivamus vitae est leo. Sed feugiat leo ut libero facilisis dictum. Curabitur
-                      luctus, tellus non rutrum tempor, eros orci accumsan eros, ut cursus libero ante vel massa.
-                      Vivamus maximus libero eu purus feugiat, eget porttitor elit facilisis. Nam gravida erat eget
-                      tellus vestibulum, commodo mattis nibh ornare. Sed semper nunc ut leo volutpat accumsan. Ut
-                      commodo finibus congue. Pellentesque vestibulum et diam vitae fringilla. In hac habitasse platea
-                      dictumst. Nulla nunc diam, auctor non efficitur eu, tempus in est. Etiam libero odio, pharetra
-                      eget dui mollis, mollis feugiat dui. Curabitur tincidunt odio vitae purus fringilla varius.
-
-               
+                     ctor.
+                      Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
+                    </p>
                     <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
                       more</button>
 
                   </div>
                 </div>
+                 
               </div>
-              <div class="col-3">
+
+
+              <div class="item">
+                
                 <div class="card" style="border-color: white; text-align: center;">
                   <div class="card-body">
-                    <h5 class="card-title"style="font-family: Samsung Sharp Sans Regular;">Card 3</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet,
+                    <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
+                    <p class="card-text" style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit. Aenean euismod bibendum
                       laoreet. Proin gravida dolor sit amet lacus accumsan et
                       viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                    <p class="discription"style="font-family: Samsung Sharp Sans Regular;">
+                    <p class="discription" style="font-family: Samsung Sharp Sans Regular;">
 
 
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
@@ -414,134 +406,68 @@
                       massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
                       Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
 
+                     ctor.
+                      Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
+                    </p>
+                    <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
+                      more</button>
+
+                  </div>
+                </div>
+                 
+              </div>
+
+
+              <div class="item">
+                
+                <div class="card" style="border-color: white; text-align: center;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-family: Samsung Sharp Sans Regular;">Card 1</h5>
+                    <p class="card-text" style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Aenean euismod bibendum
+                      laoreet. Proin gravida dolor sit amet lacus accumsan et
+                      viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                    <p class="discription" style="font-family: Samsung Sharp Sans Regular;">
+
+
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
+                      sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
+                      accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
+                      massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
+                      Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
+
+                     ctor.
+                      Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
+                    </p>
+                    <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
+                      more</button>
+
+                  </div>
+                </div>
+                 
+              </div>
               
-                    </p>
-                    <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
-                      more</button>
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="border-color: white; text-align: center;">
-                  <div class="card-body">
-                    <h5 class="card-title"style="font-family: Samsung Sharp Sans Regular;">Card 4</h5>
-                    <p class="card-text"style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Aenean euismod bibendum
-                      laoreet. Proin gravida dolor sit amet lacus accumsan et
-                      viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                    <p class="discription"style="font-family: Samsung Sharp Sans Regular;">
-
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis consectetur leo et
-                        sollicitudin. Fusce sed enim sem. Phasellus eget ipsum odio. Morbi ullamcorper turpis justo, eu
-                        accumsan neque volutpat vitae. Pellentesque pretium interdum facilisis. Suspendisse vitae bibendum
-                        massa. Maecenas nec nulla finibus, tincidunt enim a, efficitur mauris. Integer vel lacinia turpis.
-                        Sed eleifend accumsan libero, vitae bibendum nulla maximus in.
-
-                        Nam enim ipsum, porta ac pretium eget, vulputate euismod eros. Nunc urna enim, posuere sed laoreet
-                        sed, tempor et nibh. Ut viverra malesuada aliquam. Phasellus sed dolor dui. Etiam faucibus blandit
-                        sollicitudin. Curabitur ornare ipsum nec diam pharetra tempor. Nam interdum lectus sit amet diam
-                        ultrices mollis ut vel urna. Fusce rutrum tempus laoreet. In hendrerit faucibus orci, vel semper
-                        magna posuere sed. Proin quis feugiat metus, nec tempus velit. Aenean tincidunt sed orci at
-                        laoreet. Proin a nibh at urna imperdiet ullamcorper et ac justo.
-
-                      Nam at convallis augue. Morbi lobortis varius libero et molestie. Proin tempor, purus et vehicula
-                      fringilla, libero mi tristique nulla, et volutpat dui ante et elit. Sed diam arcu, posuere at
-                      vestibulum non, pulvinar eget dui. Pellentesque facilisis, nibh non hendrerit vestibulum, metus
-                      erat volutpat nisl, ut pharetra dolor justo sit amet tortor. Donec eu lorem quis lectus luctus
-                      tincidunt vitae vitae nulla. Integer nisi purus, fermentum ac neque faucibus, sodales aliquam
-                      diam. Aliquam auctor sapien et accumsan mattis. Fusce laoreet pellentesque gravida. Ut eu volutpat
-                      ex, at sodales felis. Vivamus ligula augue, hendrerit ut tempus non, euismod eget dui. Vivamus
-                      hendrerit velit dui, sit amet semper nisi mollis vitae. Mauris eu lectus a enim commodo ultrices.
-                      Nulla justo lorem, consequat in velit sit amet, hendrerit dapibus augue. Suspendisse cursus
-                      scelerisque tortor sed dignissim.
-
-                      Sed eget libero et metus feugiat auctor in eget lorem. Sed et dui sollicitudin erat auctor semper.
-                      Quisque dictum odio metus, nec malesuada nisi luctus id. Aenean finibus sagittis libero at varius.
-                      Fusce vel libero ultricies, malesuada urna eget, lacinia tortor. Pellentesque sit amet velit
-                      magna. Ut non ornare lacus. Morbi aliquet cursus arcu, a lacinia nisl luctus sit amet. Quisque
-                      vestibulum porttitor massa, quis euismod mi consectetur ut. Aliquam tincidunt, metus nec congue
-                      pretium, tortor nunc elementum turpis, in bibendum nunc urna vitae dui. Sed sit amet scelerisque
-                      nibh, eu varius est.
-
-                      Proin dictum, justo sit amet porta lacinia, nunc dolor lacinia ligula, eget faucibus est est vel
-                      turpis. Cras rhoncus sollicitudin enim, a gravida tortor finibus eget. Mauris non massa vel ex
-                      imperdiet rutrum vitae sed elit. Duis a magna quis ligula pharetra convallis. Nam malesuada
-                      tristique mi, sed luctus purus tempus in. Pellentesque porttitor sed augue non scelerisque.
-                      Praesent at sapien nibh. Cras vitae tempor nisl, condimentum rutrum nunc. Aenean ante turpis,
-                      dapibus sed mollis sed, cursus in est. Fusce fringilla molestie sapien non dictum. Curabitur sit
-                      amet placerat felis, at mollis orci. Ut commodo, nisi vel congue posuere, turpis turpis pretium
-                      odio, id suscipit odio ex lacinia libero.
-
-                      Nulla varius tempor velit, sed pellentesque justo suscipit ut. Vivamus placerat vitae mauris vel
-                      facilisis. In rutrum velit sed sapien pharetra rutrum. Aenean non nunc purus. Nam eu erat laoreet,
-                      dignissim urna non, imperdiet purus. Vestibulum convallis sit amet nibh ac tempus. Sed sit amet
-                      bibendum purus, sit amet pellentesque enim. Fusce vitae hendrerit ante. Nam vulputate convallis
-                      odio. Ut non suscipit urna. Morbi tincidunt enim non lorem placerat, eget vehicula nulla
-                      dignissim. Duis rutrum felis massa, ac feugiat quam vehicula id. Cras euismod magna vitae nibh
-                      tempor pharetra. Maecenas eu mauris mi. Maecenas et massa arcu. Curabitur imperdiet augue vel
-                      auctor mollis.
-
-                      Morbi in ex quam. Vivamus vitae est leo. Sed feugiat leo ut libero facilisis dictum. Curabitur
-                      luctus, tellus non rutrum tempor, eros orci accumsan eros, ut cursus libero ante vel massa.
-                      Vivamus maximus libero eu purus feugiat, eget porttitor elit facilisis. Nam gravida erat eget
-                      tellus vestibulum, commodo mattis nibh ornare. Sed semper nunc ut leo volutpat accumsan. Ut
-                      commodo finibus congue. Pellentesque vestibulum et diam vitae fringilla. In hac habitasse platea
-                      dictumst. Nulla nunc diam, auctor non efficitur eu, tempus in est. Etiam libero odio, pharetra
-                      eget dui mollis, mollis feugiat dui. Curabitur tincidunt odio vitae purus fringilla varius.
-
-                      In hac habitasse platea dictumst. Nullam iaculis quam sagittis finibus suscipit. In in sem quis
-                      orci consequat ornare. Aliquam aliquam quam sed dui pharetra sodales. Nam maximus, erat in auctor
-                      varius, ex neque facilisis lorem, vel dictum sem justo vitae tellus. Vivamus porttitor, justo nec
-                      cursus vulputate, diam elit dictum ante, at finibus ex ex ac sapien. Suspendisse egestas, turpis
-                      ac auctor hendrerit, odio lectus ultrices metus, quis hendrerit lorem libero ut arcu.
-
-                      Duis sed augue neque. Maecenas pretium dui sed congue scelerisque. Nunc malesuada blandit quam sed
-                      porttitor. In ultrices velit sed dolor molestie vehicula. Cras dictum venenatis augue, id
-                      consectetur purus ultricies eu. Morbi eleifend augue at enim interdum, eget condimentum leo
-                      rutrum. Fusce eu aliquam justo. Ut venenatis tincidunt nunc. Nulla blandit, lacus a iaculis
-                      rutrum, purus arcu porta ipsum, vel condimentum augue augue ut tortor. Aenean luctus ligula id
-                      ornare laoreet. Fusce a lacus ac quam interdum facilisis in ac lectus. Quisque mattis pellentesque
-                      nisi vitae mattis. Nunc ultrices dui erat, nec elementum massa viverra rhoncus. Suspendisse
-                      dignissim est non rhoncus ornare. Pellentesque eu orci libero.
-
-                      Sed quis metus aliquet, consectetur nulla nec, interdum justo. Proin mauris sapien, tempor vel
-                      finibus id, euismod eu lectus. In id diam id lorem finibus dapibus. Pellentesque ullamcorper metus
-                      sed felis lobortis placerat. Maecenas egestas, metus ut porttitor accumsan, turpis velit imperdiet
-                      libero, eget sagittis justo mauris non sapien. Nunc ornare viverra neque, at maximus nibh faucibus
-                      vel. Ut dignissim justo sit amet scelerisque rhoncus. Donec euismod venenatis est sit amet auctor.
-                      Nullam tristique varius quam, non aliquam eros lacinia non. Nulla eget posuere felis.
-                    </p>
-                    <button type="button" class="btn btn-light read-more" style="border-color: black;">Read
-                      more</button>
-
-                  </div>
-                </div>
-              </div>
+        
+            
             </div>
           </div>
-
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#card1" data-bs-slide="prev"
-          style="color: #182B3C; font-size: 40px;">
-          <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/Untitled-2copy.png" style="width: 50px;"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#card1" data-bs-slide="next"
-          style="color: #182B3C; font-size: 40px;">
-          <span class="carousel-control-next-icon" aria-hidden="true"><img src="img/Untitled-1 copy.png" style="width: 50px;"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
+        
+    
+    </div>
+    
     </div>
 
-    <div class="container shadow-box scroll-container" id="full-discription-continer">
-      <p id="full-discription" class="content">
 
-      </p>
+
+    <div class="container shadow-box  p-0" id="full-discription-continer">
+      <div class="row">
+        <div class="col-md-10 col-sm-12">
+          <p id="full-discription" class="content">
+
+          </p>
+        </div>
+        
+      </div>
     </div>
 
 
@@ -550,10 +476,10 @@
 
 
     <div id="articleViwer"></div>
-   <div class="container justify-content-center"  id="artcile-view">
-      <div id="selector-btn" style="padding-right: 900px; padding-left: 0px !important; ">
+    <div class="container justify-content-center"  id="artcile-view">
+      <div id="selector-btn">
 
-        <div class="checkbox-button" style="padding-left: 70px;"  for="conditions">
+        <div class="checkbox-button"  for="conditions">
           <div class="content" style="font-family: Samsung Sharp Sans Regular;">
             <h5 style="font-family: Samsung Sharp Sans Regular;"> ASj bahsjdb jahsbdjh asbdhjasbdhjasbdasd asdasdasd asda jh:</h5>
             <ul style="font-family: Samsung Sharp Sans Regular;">
@@ -564,7 +490,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox2" name="selector">
-          <label class="checkLabel" for="checkbox2" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
+          <label class=" checkLabel" id="tab1" for="checkbox2"  >Conditions</label>
         </div>
 
         <div class="checkbox-button" for="oral">
@@ -577,7 +503,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox3" name="selector">
-          <label class="checkLabel" for="checkbox3" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
+          <label class="checkLabel tab"  id="checkbox-tab2" for="checkbox3" style=" ">Oral Discussion </label>
         </div>
 
         <div class="checkbox-button" for="submissions">
@@ -600,7 +526,7 @@
             </div>
           </div>
           <input type="checkbox" id="checkbox4" name="selector">
-          <label class="checkLabel" for="checkbox4" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
+          <label class="checkLabel tab"  id="checkbox-tab3" for="checkbox4" style="">submissions</label>
         </div>
 
         <div class="checkbox-button" for="fess">
@@ -619,7 +545,7 @@
             </ul>
           </div>
           <input type="checkbox" id="checkbox5" name="selector">
-          <label class="checkLabel" for="checkbox5" style="font-family: Samsung Sharp Sans bold; width: 218px;">Checkbox Button 1</label>
+          <label class="checkLabel tab"  id="tab4" for="checkbox5" style="">fess</label>
         </div>
 
       </div>
@@ -632,161 +558,142 @@
 
 
 
-    <div class="container-fluid" style="text-align: center; padding-top: 100px;padding-bottom:20px; ">
+    
 
-      <h1 style="font-family: Samsung Sharp Sans bold;">Artcle Processing Charges (APCs)</h1>
-      <h4 style="font-family: Samsung Sharp Sans Regular;">Book Series</h4>
+    
 
-      <div id="card2" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
 
-          
-         <div class="row justify-content-center">
-          <div class=" col-3 ">
-             <div class="card"
-            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
-            <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-              <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+
+
+
+
+
+
+
+<div class="continer justify-content-center">
+   
+  <div class="row justify-content-center p-5">
+      <div class="col-md-9 col-12">
+        <div class="owl-carousel justify-content-center text-center">
+          <div class="item">
+            
+              <div class="card"
+              style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+              <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
+                <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+              </div>
+              <div class="card-body " style="text-align: center;">
+                <p class="card-text">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Aenean euismod bibendum
+                  laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                <button class="btn "
+                  style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
+                <h1>200$</h1>
+              </div>
             </div>
-            <div class="card-body " style="text-align: center;">
-              <p class="card-text">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean euismod bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et
-                viverra justo commodo.Lorem ipsum dolor sit amet</p>
-              <button class="btn "
-                style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-              <h1>200$</h1>
-            </div>
+             
           </div>
-          </div>
-
-          <div class=" col-3 ">
-            <div class="card"
-                    style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-
-                    <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-                      <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
-                    </div>
-                    <div class="card-body " style="text-align: center;">
-                      <p class="card-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Aenean euismod bibendum
-                        laoreet. Proin gravida dolor sit amet lacus accumsan et
-                        viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                      <button class="btn "
-                        style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-                      <h1>200$</h1>
-                    </div>
-                  </div>
-          </div>
-
-          <div class=" col-3 ">
-            <div class="card"
-            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-
-            <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-              <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+          <div class="item">
+            
+              <div class="card"
+              style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+              <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
+                <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+              </div>
+              <div class="card-body " style="text-align: center;">
+                <p class="card-text">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Aenean euismod bibendum
+                  laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                <button class="btn "
+                  style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
+                <h1>200$</h1>
+              </div>
             </div>
-            <div class="card-body " style="text-align: center;">
-              <p class="card-text">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean euismod bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et
-                viverra justo commodo.Lorem ipsum dolor sit amet</p>
-              <button class="btn "
-                style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-              <h1>200$</h1>
-            </div>
+           
           </div>
+          <div class="item">
+           
+              <div class="card"
+              style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+              <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
+                <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+              </div>
+              <div class="card-body " style="text-align: center;">
+                <p class="card-text">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Aenean euismod bibendum
+                  laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                <button class="btn "
+                  style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
+                <h1>200$</h1>
+              </div>
+            </div>
+            
           </div>
-        
-         </div>
-
-
-          
-          
-        </div>
-
-        <div class="carousel-item ">
-
-          
-          <div class="row justify-content-center">
-           <div class=" col-3 ">
-            <div class="card"
-                    style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-
-                    <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-                      <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
-                    </div>
-                    <div class="card-body " style="text-align: center;">
-                      <p class="card-text">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Aenean euismod bibendum
-                        laoreet. Proin gravida dolor sit amet lacus accumsan et
-                        viverra justo commodo.Lorem ipsum dolor sit amet</p>
-                      <button class="btn "
-                        style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-                      <h1>200$</h1>
-                    </div>
-                  </div>
-           </div>
- 
-           <div class=" col-3 ">
-            <div class="card"
-            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-
-            <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-              <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
-            </div>
-            <div class="card-body " style="text-align: center;">
-              <p class="card-text">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean euismod bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et
-                viverra justo commodo.Lorem ipsum dolor sit amet</p>
-              <button class="btn "
-                style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-              <h1>200$</h1>
-            </div>
+          <div class="item">
+           
+              <div class="card"
+              style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+              <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
+                <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+              </div>
+              <div class="card-body " style="text-align: center;">
+                <p class="card-text">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Aenean euismod bibendum
+                  laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                <button class="btn "
+                  style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
+                <h1>200$</h1>
+              </div>
+            
+             </div>
           </div>
-           </div>
- 
-           <div class=" col-3 ">
-            <div class="card"
-            style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-
-            <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
-              <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
-            </div>
-            <div class="card-body " style="text-align: center;">
-              <p class="card-text">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean euismod bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et
-                viverra justo commodo.Lorem ipsum dolor sit amet</p>
-              <button class="btn "
-                style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
-              <h1>200$</h1>
-            </div>
-          </div>
-           </div>
+          <div class="item">
          
+              <div class="card"
+              style="border-radius: 0px; width: 300px; height: 420px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+              <div class="card-body " style="background-color: #05af4f; text-align: center; color: white; ">
+                <h5 class="card-title">Advances in Science, Technology and Innovation(ASTI)</h5>
+              </div>
+              <div class="card-body " style="text-align: center;">
+                <p class="card-text">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Aenean euismod bibendum
+                  laoreet. Proin gravida dolor sit amet lacus accumsan et
+                  viverra justo commodo.Lorem ipsum dolor sit amet</p>
+                <button class="btn "
+                  style="background-color: #05af4f; color: white; border-radius: 0px; width: 200px;">Submit</button>
+                <h1>200$</h1>
+              </div>
+          
+             </div>
           </div>
- 
- 
-           
-           
-         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#card2" data-bs-slide="prev"
-        style="color: #182B3C; font-size: 40px;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"><img src="img/Untitled-2copy.png" style="width: 50px;"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#card2" data-bs-slide="next"
-        style="color: #182B3C; font-size: 40px;">
-        <span class="carousel-control-next-icon" aria-hidden="true"><img src="img/Untitled-1 copy.png" style="width: 50px;"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    
+        
+        </div>
       </div>
-    </div>
-    </div>
+    
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
 
     
 
@@ -937,7 +844,7 @@
 
 
    
-    <div class="container-fluid" style="background-color: #182B3C; height: 150px; margin-top: -50px;">
+    <div class="container-fluid" style="background-color: #182B3C; height: 150px; margin-top: -100px;">
 
 
     </div>
@@ -977,20 +884,20 @@
 
     <div class="container-fluid" style="padding-top: 50px;">
       <div class="row">
-        <div class="col-md-6 " style="text-align: center;">
+        <div class="col-md-9" style="text-align: center;">
 
           <div class="row">
-            <div class="col-md-6" style="text-align: end;">
-              <img src="img/63232073802.png" style="width: 50px; width:200px ; ">
+            <div class="col-md-6 " id="footer-col" style="">
+              <img src="img/63232073802.png" id="image-footer" style=" ">
             </div>
-            <div class="col-md-6" style="text-align: start; padding-top: 20px;">
+            <div class="col-md-6" style="" id="footer-text">
               <p>IEREK Copyright @ 2023 - Web Template</p>
             </div>
           </div>
           
           
         </div>
-        <div class="col-md-6" style="text-align: center;">
+        <div class="col-md-3" style="text-align: center;">
           <i class="fa-brands fa-facebook-f"
             style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
           <i class="fa-brands fa-twitter"
@@ -1003,7 +910,7 @@
 
     </div>
   </footer>
-
+  
 
 
 
@@ -1015,6 +922,35 @@
   <script src="js/coursel.js"></script>
   <script src="js/customSelector.js"></script>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+         margin:20,
+         responsiveClass:true,
+         navText: ['<img class="navs" src="img/Untitled-2copy.png">','<img  class="navs" src="img/Untitled-1 copy.png">'],
+         nav:true,                  
+         responsive:{
+           
+            0:{
+                items:1,
+                nav:true
+            },
+            1000:{
+                items:2,
+                nav:true,
+                loop:false
+            },
+            1274:{
+              items:3,
+                nav:true,
+                loop:false
+            }
+         } 
+})
+    </script>
 
   <script>
     function expandCollapse() {
@@ -1053,7 +989,7 @@
     });
 
 
-
+    
 
     
   </script>

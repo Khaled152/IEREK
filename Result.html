@@ -47,53 +47,46 @@
     </head>
 
     <body>
-        <a href="#articleViwer" id="articleHref"></a>
         <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
-                        style="width: 678px; padding-top: 20px; padding-left: 50px;"></a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbarNav font"
-                    style="padding-right: 200px; padding-top: 30px; ">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#test">About Us</a>
-                        </li>
-                        <div class="nav-tab navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link " href="#conditions">Conditions</a>
-                            </li>
-                            <li class="nav-item nav-tab">
-                                <a class="nav-link" href="#oral">Oral Discussion</a>
-                            </li>
-                            <li class="nav-item nav-tab">
-                                <a class="nav-link" href="#submissions">Submissions</a>
-                            </li>
-                            <li class="nav-item nav-tab">
-                                <a class="nav-link" href="#fess">Fess</a>
-                            </li>
-                        </div>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid "id="header">
+              <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
+                style="" id="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#test">About Us</a>
+                  </li>
+                  <div class="nav-tab navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#conditions">Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#oral">Oral Discussion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#submissions">Submissions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fess">Fess</a>
+                  </li>
                 </div>
-
+                </ul>
+              </div>
             </div>
-        </nav>
-
+          </nav>
         <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
 
         <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
         <main>
             <div class="container"
-                style="padding-top: 100px; font-family: Samsung Sharp Sans Regular;">
+                style=" " id="result-container">
                 <div class="row">
-                    <div class="col-md-6"
-                        style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 700px; height: 400px;">
+                    <div class="col-md-6" id="result-1"
+                        style="">
                         <div class="row" style="background-color: #05af4f;">
                             <p style="color: white; font-size: 13px;"><span
                                     style="font-size: 25px;">SUBMIT ABSTRACT</span>
@@ -118,8 +111,8 @@
                         
 
                     </div>
-                    <div class="col-md-5"
-                        style="margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px; width: 400px;">
+                    <div class="col-md-5" id="result-2"
+                        style="">
                         <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
                             <div class="col-md-2">
                                 <i class="fa-solid fa-cloud-arrow-up"
@@ -355,6 +348,82 @@
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
         });
     </script>
+      <!-- jQuery library -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/coursel.js"></script>
+  <script src="js/customSelector.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+         margin:20,
+         responsiveClass:true,
+         navText: ['<img class="navs" src="img/Untitled-2copy.png">','<img  class="navs" src="img/Untitled-1 copy.png">'],
+         nav:true,                  
+         responsive:{
+           
+            0:{
+                items:1,
+                nav:true
+            },
+            1000:{
+                items:2,
+                nav:true,
+                loop:false
+            },
+            1274:{
+              items:3,
+                nav:true,
+                loop:false
+            }
+         } 
+})
+    </script>
+
+  <script>
+    function expandCollapse() {
+        var content = document.getElementById("collapseParagraph");
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = "none"; /* You can adjust the height as needed */
+        }
+    }
+</script>
+  <script>
+
+
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    const readMoreBtn = document.querySelector('.read-more');
+    const collapseEl = document.querySelector('.collapse');
+    count = 0
+    readMoreBtn.addEventListener('click', function () {
+      
+    readMoreBtn.textContent = count %2 == 0? 'Read less' : "Read More";            
+      count++
+    });
+
+
+    
+
+    
+  </script>
         <!--------------------------------------------------------END JS----------------------------------------------------------------------------------------------->
 
     </body>
