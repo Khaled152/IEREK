@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="keywords" content="HTML,CSS,bootstrap,JavaScript,education,CS,IS">
+    <meta name="author" content="Error 404">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+
+
+    <!-- Bootstrap JS -->
+
+    <title>checkout</title>
+
+    <script src="js/all.js"></script>
+    <style>
+        /****************status*******************************/
+        #statues {
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+        }
+
+        .statues-icon {
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 110px;
+            padding: 10px;
+            background-color: rgb(225, 223, 223);
+
+        }
+
+        .status-row {
+            padding: 10px;
+        }
+
+        .status-col {
+            border: 1px solid #b0aeae;
+            padding-top: 10px;
+
+        }
+
+        .status-p {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        #status-active {
+            background-color: #05af4f;
+            color: white;
+        }
+
+        #icon-active {
+            border: 1px solid white;
+            color: white;
+            border-radius: 110px;
+            background-color: rgb(13, 40, 15);
+        }
+
+        /****************status*******************************/
+        /************************checkout********************/
+        .checkout-container {
+            margin-top: 30px;
+            
+        }
+
+        .checkout-p {
+            padding-top: 30px;
+            font-size: 20px;
+        }
+
+        .checkout-row {
+            background-color: rgb(216, 216, 216);
+            padding: 30px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+        .checkout-form {
+            background-color: #05af4f;
+            color: white;
+            padding: 20px;
+        }
+
+        #warning-p {
+            color: red;
+            font-size: 30px;
+        }
+        .checkout-col1{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            
+        }
+        .checkout-col2{
+            margin-left: 30px;
+        }
+        .payment1{
+            text-align: end;
+        }
+        /************************checkout********************/
+        @media(max-width:557px) {
+            #statues{
+                margin-left: 2px;
+            }
+            .checkout-container{
+                margin-left: 2px;
+            }
+            .checkout-col2{
+                padding-top: 30px;
+                margin-left: 0px;
+            }
+            .payment-text{
+                margin-left: 15px;
+                font-size: 12px;
+            }
+            #warning-p{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid " id="header">
+            <a class="navbar-brand" href="#"><img src="img/Capture.JPG" style="" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#test">About Us</a>
+                    </li>
+                    <div class="nav-tab navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#conditions">Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oral">Oral Discussion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#submissions">Submissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fess">Fess</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--start statues section-->
+    <div class="container" id="statues">
+        <div class="row status-row">
+            <div class="col-md-4 col-sm-12 status-col">
+                <div class="review-item">
+                    <div class="reivew-top">
+                        <i class="fas fa-edit myicon statues-icon" style=" "></i>
+                        <h2 style="display: inline;">Order</h2>
+                    </div>
+                    <p class="status-p">Choose you fees and aditional service </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 status-col">
+                <div class="review-item">
+                    <div class="reivew-top">
+                        <i class="fa-solid fa-check  myicon statues-icon"></i>
+                        <h2 style="display: inline;">Review</h2>
+                    </div>
+                    <p class="status-p">Review Your Order</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 status-col" id="status-active">
+                <div class="review-item">
+                    <div class="reivew-top">
+                        <i class="fa-solid fa-check  myicon statues-icon" id="icon-active"></i>
+                        <h2 style="display: inline;" id="status-active">Checkout</h2>
+                    </div>
+                    <p class="status-p" id="status-active">Confirm Your Payment and checkout </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end statues section-->
+
+
+
+
+
+
+    <!--start form checkout-->
+    <div class="container checkout-container" >
+        <div class="row">
+            <div  class="col-md-7 col-sm-12 checkout-col1" style="" >
+                <div class="row" style="background-color: #05af4f;">
+                    <p style="color: white; font-size: 13px;"><span style="font-size: 25px;">Checkout Payment</span>
+                        Cittes' identify Through Architecture
+                        and Arts (CITTA) -7th Edition</p>
+
+                </div>
+
+                <p class="checkout-p">Choose Your Payment Method</p>
+
+                <div class="row checkout-row" style="">
+                    <div class="col-1" style="text-align: end;">
+                        <i class="fa-solid fa-credit-card" style="font-size: 30px; "></i>
+
+                    </div>
+                    <div class="col-11">
+                        <h5 class="payment-text" style="display: inline;">Pay With Credit Card (AMX & JSC)</h5>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row checkout-row" >
+                    <div class="col-1 payment1" style="text-align: end;" >
+                        <i class="fa-solid fa-credit-card" style="font-size: 30px; "></i>
+
+                    </div>
+                    <div class="col-11">
+                        <h5  class="payment-text" style="display: inline;">Pay With Credit Card (VISA & MASTER)</h5>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row checkout-form " style="">
+                    <div class="col-1 payment1" >
+                        <i class="fa-solid fa-paper-plane" style="font-size: 30px; "></i>
+                    </div>
+                    <div class="col-11">
+                        <h5  style="display: inline; margin-left: 5px;">Pay With Credit Card (VISA & MASTER)</h5>
+
+                    </div>
+                </div>
+                <div class="row" style=" padding: 10px;">
+                    <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
+                        suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
+                        volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
+                        velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
+                        sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
+                        eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
+                        eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
+                        varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
+                    </div>
+                </div>
+                <div class="row" style=" padding: 10px;">
+                    <p id="warning-p">**NOTE*: The transaction fee is solely the participants' responsibility.</p>
+                </div>
+                <div class="row" style=" padding: 10px;">
+                    <h5>After you have completed the payment, kindly do the following;</h5>
+                    <br>
+                    <p>- inform us with all the transaction details.</p>
+                    <p>The registration marked as pendding until we confirm the transaction. Note: you have to select
+                        fees first to show our relative bank account to the select curreny!</p>
+                    <p>After you make your transfer, kindly send us a scanned copy of the receipt to
+                        financialservice@ierek.com </p>
+                </div>
+                <div class="row" style=" padding: 10px;">
+
+                    <div class="alert alert-info" role="alert">
+                        A Confimation message will be sent to you after we recive the receipt
+                    </div>
+                </div>
+                <div class="row" style=" padding: 10px;">
+
+                    <h4> Contact information</h4>
+                    <hr>
+                </div>
+                <form action="#" method="POST">
+
+                    <div class="row" style=" padding: 10px;">
+
+                        <div class="col-12">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+
+                        <br>
+
+                        <div class="col-12">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <br>
+                        <div class="col-12">
+                            <label for="Phone">Phone</label>
+                            <input type="number" class="form-control" id="email">
+                        </div>
+
+                    </div>
+                </form>
+                <div class="row" style=" padding: 10px;">
+                    <div class="col-1"  style="text-align: end;">
+                        <i class="fa-solid fa-phone" style="color: #05af4f; text-align: end;" ></i>
+
+                    </div>
+                    <div class="col-11" style="text-align: start;">
+                        <p style="color: #05af4f; ">You Will be Contacted by our repressentative requlary within 24 hours. (Need help? Contact Us)</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row checkout-row" style="">
+                    <div class="col-1" style="text-align: end;">
+                        <i class="fa-solid fa-dollar-sign" style="font-size: 30px; "></i>
+
+                    </div>
+                    <div class="col-11">
+                        <h5 style="display: inline;">Pay With Cash</h5>
+
+                    </div>
+                </div>
+                <div class="row" style=" padding: 10px;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        Please Read and Agree to our terms & Conditions
+                        </label>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 checkout-col2"  >
+                <div class="row" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                    <p>Order summary</p>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>test</p>
+                        </div>
+                        <div class="col-4">
+                            22.00 <span style="color: #05af4f;">EUR</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>TOTAL</p>
+                        </div>
+                        <div class="col-4">
+                            22.00 <span style="color: #05af4f;">EUR</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>APPROX TOTAL IN EGP</p>
+                        </div>
+                        <div class="col-4">
+                            22.00 <span style="color: #05af4f;">EGP</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; padding: 10px;">
+                    <button type="button" class="btn btn-success" style="border-radius: 0px;">Checkout  <i class="fa-solid fa-check "></i> </button>
+                </div>
+                <br>
+                <div class="row" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; padding: 10px;">
+                    <h5>Pay with alternative method</h5>
+                    <p>if you have any problem, you can use this linke</p>
+                    <button type="button" class="btn btn-success" style="border-radius: 0px;">alternative link  <i class="fa-solid fa-angle-right"></i> </button>
+
+                </div>
+                <br>
+
+                <div class="row" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; padding: 10px;">
+                    <h5>Send Email</h5>
+                    <p>if you have any problem, With payment you can send mail</p>
+                    <button type="button" class="btn btn-success" style="border-radius: 0px;">Send Email  <i class="fa-solid fa-angle-right"></i> </button>
+
+                </div>
+
+            </div>
+        
+        </div></div>
+    <!--end form checkout-->
+
+    <footer>
+        <div class="container " style="text-align: center; padding-top: 50px; justify-content: center;">
+    
+    
+          <h1 style="font-family: Samsung Sharp Sans bold;">Sbuscribe to Our <span style="color: #05af4f;">Newsletter </span></h1>
+          <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet.</p>
+          <div class="row justify-content-center">
+            <form action="#" method="post" name="sign-up" style="width: 700px; border-radius: 0px; ">
+              <input type="email" class="input" id="email" name="email" placeholder="Type Your Email here"
+                style="border-radius: 0px;  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+              <input type="submit" class="button" id="submit" value="SEND MAIL"
+                style="border-radius: 0px; background-color: #05af4f; color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            </form>
+    
+          </div>
+        </div>
+    
+        <div class="container-fluid" style="padding-top: 50px;">
+          <div class="row">
+            <div class="col-md-9" style="text-align: center;">
+    
+              <div class="row">
+                <div class="col-md-6 " id="footer-col" style="">
+                  <img src="img/63232073802.png" id="image-footer" style=" ">
+                </div>
+                <div class="col-md-6" style="" id="footer-text">
+                  <p>IEREK Copyright @ 2023 - Web Template</p>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+              <i class="fa-brands fa-facebook-f"
+                style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+              <i class="fa-brands fa-twitter"
+                style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+              <i class="fa-brands fa-instagram"
+                style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+            </div>
+    
+          </div>
+    
+        </div>
+      </footer>
+      
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

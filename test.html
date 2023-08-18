@@ -1,41 +1,587 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Future Academy">
+    <meta name="keywords" content="HTML,CSS,bootstrap,JavaScript,education,CS,IS">
+    <meta name="author" content="Error 404">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap JS -->
+
+
+
+    <script src="js/all.js"></script>
+    <title>Submit Paper</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+        <style>
+          /****************status*******************************/
+          #statues {
+              margin-top: 30px;
+              text-align: center;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+  
+          }
+  
+          .statues-icon {
+              border: 1px solid black;
+              font-size: 20px;
+              border-radius: 110px;
+              padding: 10px;
+              background-color: rgb(225, 223, 223);
+  
+          }
+  
+          .status-row {
+              padding: 10px;
+          }
+  
+          .status-col {
+              border: 1px solid #b0aeae;
+              padding-top: 10px;
+  
+          }
+  
+          .status-p {
+              padding-top: 10px;
+              text-align: center;
+          }
+  
+          #status-active {
+              background-color: #05af4f;
+              color: white;
+          }
+  
+          #icon-active {
+              border: 1px solid white;
+              color: white;
+              border-radius: 110px;
+              background-color: rgb(13, 40, 15);
+          }
+  
+          /****************status*******************************/
+          /************************checkout********************/
+          .checkout-container {
+              margin-top: 30px;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          }
+  
+          .checkout-p {
+              padding-top: 30px;
+              font-size: 20px;
+          }
+  
+          .checkout-row {
+              background-color: rgb(216, 216, 216);
+              padding: 30px;
+              margin-left: 1px;
+              margin-right: 1px;
+          }
+  
+          .checkout-form {
+              background-color: #05af4f;
+              color: white;
+              padding: 20px;
+          }
+  
+          #warning-p {
+              color: red;
+              font-size: 30px;
+          }
+  
+          /************************checkout********************/
+      </style>
 </head>
+
 <body>
-  <button id="btn1">Toggle Content</button>
-  <button id="btn2">Toggle Content</button>
-  
-  <div id="content1" class="content" >
-    <!-- Content 1 -->
-    <h2>Content 1</h2>
-    <p>This is the first content.</p>
+    <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        <div class="container-fluid "id="header">
+          <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
+            style="" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link "  href="#test">About Us</a>
+              </li>
+              <div class="nav-tab navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#conditions">Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oral">Oral Discussion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#submissions">Submissions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fess">Fess</a>
+              </li>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
+
+    <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
+    <main>
+
+          <!--start statues section-->
+    <div class="container" id="statues">
+      <div class="row status-row">
+          <div class="col-md-4 col-sm-12 status-col">
+              <div class="review-item">
+                  <div class="reivew-top">
+                      <i class="fas fa-edit myicon statues-icon" style=" "></i>
+                      <h2 style="display: inline;">Order</h2>
+                  </div>
+                  <p class="status-p">Choose you fees and aditional service </p>
+              </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 status-col">
+              <div class="review-item">
+                  <div class="reivew-top">
+                      <i class="fa-solid fa-check  myicon statues-icon"></i>
+                      <h2 style="display: inline;">Review</h2>
+                  </div>
+                  <p class="status-p">Review Your Order</p>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 status-col" id="status-active">
+              <div class="review-item">
+                  <div class="reivew-top">
+                      <i class="fa-solid fa-check  myicon statues-icon" id="icon-active"></i>
+                      <h2 style="display: inline;" id="status-active">Checkout</h2>
+                  </div>
+                  <p class="status-p" id="status-active">Confirm Your Payment and checkout </p>
+              </div>
+          </div>
+      </div>
   </div>
-  
-  <div id="content2" class="content" style="display: none;">
-    <!-- Content 2 -->
-    <h2>Content 2</h2>
-    <p>This is the second content.</p>
-  </div>
+  <!--end statues section-->
+
+        <div class="container" style="" id="paper-container">
+            <div class="row">
+                <div class="col-md-6" id="paper-1"
+                    style="">
+                    <div class="row" style="background-color: #05af4f;">
+                        <p style="color: white; font-size: 13px;"><span style="font-size: 25px;">SUBMIT PAPAER</span>
+                            Cittes' identify Through Architecture
+                            and Arts (CITTA) -7th Edition</p>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+                        <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
+                            suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
+                            volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
+                            velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
+                            sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
+                            eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
+                            eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
+                            varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="mb-3">
+                                <label class="form-label">Subject</label>
+
+                                <select class="form-select" aria-label="Default select example"
+                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Topics</label>
+
+                                <div class="multiselect-dropdown">
+                                    <i class="fa-solid fa-chevron-down icon"></i>
+                                    <div class="selectedList-container "
+                                        style="border: 1px solid black;  border-radius: 0px; "></div>
+                                    <ul class="menu ">
+                                        <li>Pink</li>
+                                        <li>Blue</li>
+                                        <li>Green</li>
+                                        <li>Yellow</li>
+                                        <li>Red</li>
+                                        <li>Orange</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Subject</label>
+
+                                <select class="form-select" aria-label="Default select example"
+                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                            </div>
+                            <div class="mb-3">
+                                <a href="Paper.html" type="button" class="btn btn-success">Paper</a>
+                                <a href="Abstract.html" type="button" class="btn btn-success">Abstract</a>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Paper Title</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    style="width: 354px;border: 1px solid black; border-radius: 0px;">
+                            </div>
+
+
+
+
+
+                            <div class="mb-3">
+                                <label>OR Upload your Paper File : (Allowed EXtinsions: pdf, doc, docm and
+                                    dox)</label>
+                                <div class="row" style="width: 370px; padding-left: 20px;">
+
+                                    <input class="form-control" type="file" name="files[]" multiple>
+
+
+                                </div>
+                            </div>
+                            <div class="mb-3">
+
+                                <div class="row" style="width: 370px; padding-left: 20px;">
+
+                                    <input class="form-control" type="file" name="files[]" multiple>
+
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Please Confirm that you Read <a href="#Instructions">Instructions</a>.
+                                        </label>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-success" style="border-radius: 0px;">Submit
+                                            Paper</button>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="col-md-5" id="paper-2"
+                    style="">
+
+                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
+                        <div class="col-md-2">
+                            <i class="fa-solid fa-cloud-arrow-up"
+                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                        </div>
+                        <div class="col-md-10">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"><del> 1.Abstract</del>
+                            </h3>
+
+                        </div>
+                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
+                    </div>
+                    <hr>
+                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
+                        <div class="col-md-2">
+                            <i class="fa-solid fa-eye"
+                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                        </div>
+                        <div class="col-md-10">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> <del>2.Status</del>
+                            </h3>
+
+                        </div>
+                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
+                    </div>
+                    <hr>
+
+                    <div class="row" style=" padding: 20px; background-color: #05af4f;">
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-upload"
+                                style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
+                        </div>
+                        <div class="col-md-9" style="margin-left: -18px;">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold; color: white;"> 3.Paper
+                            </h3>
+
+                        </div>
+                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                    <hr>
+                    <div class="row" style="padding-top: 20px; padding: 10px;">
+                        <div class="col-md-2">
+                            <i class="fa-solid fa-laptop"
+                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                        </div>
+                        <div class="col-md-10">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 4.Revision</h3>
+
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                    <hr>
+                    <div class="row" style="padding-top: 20px; padding: 10px;">
+                        <div class="col-md-2">
+                            <i class="fa-solid fa-link"
+                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
+
+                        </div>
+                        <div class="col-md-10">
+                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 5.Result</h3>
+
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                    <div class="row" style="padding-top: 20px; padding: 10px;">
+                        <button type="button" class="btn btn-success" style="border-radius: 0px;"><i
+                                class="fa-solid fa-file-circle-check"></i> Download Writting Template</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!-----------------------------------------------------------end Main------------------------------------------------------------------------->
+    <!------------------------------------------------------------start footer-------------------------------------------------------------------->
+    <footer>
+        <div class="container " style="text-align: center; padding-top: 50px; justify-content: center;">
+
+
+            <h3 style="padding-top: 15px;" style="font-family: Samsung Sharp Sans bold;">Sbuscribe to Our <span
+                    style="color: #05af4f;">Newsletter
+                </span></h3>
+            <p style="font-family: Samsung Sharp Sans Regular;">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Aenean euismod bibendum
+                laoreet.</p>
+            <div class="row justify-content-center">
+                <form action="#" method="post" name="sign-up" style="width: 700px; border-radius: 0px; ">
+                    <input type="email" class="input" id="email" name="email" placeholder="Type Your Email here"
+                        style="border-radius: 0px;  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                    <input type="submit" class="button" id="submit" value="SEND MAIL"
+                        style="border-radius: 0px; background-color: #05af4f; color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-top: 50px;">
+            <div class="row">
+                <div class="col-md-8 " style="text-align: center;">
+
+                    <div class="row">
+                        <div class="col-md-6" style="text-align: end;">
+                            <img src="img/63232073802.png" style="width: 50px; width:200px ; ">
+                        </div>
+                        <div class="col-md-6" style="" id="footer-paper-text">
+                            <p>IEREK Copyright @ 2023 - Web Template</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <i class="fa-brands fa-facebook-f"
+                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+                    <i class="fa-brands fa-twitter"
+                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+                    <i class="fa-brands fa-instagram"
+                        style="color: white; background-color: #05af4f; padding: 10px; border-radius: 500px;height: 20px; width: 20px;"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!--------------------------------------------------------end footer----------------------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script src="https://cdn.tiny.cloud/1/lbn5nyw5r6ak0y883ixfucz9gt1wa7jxesmv8whz6zqlvqfj/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+    <script>
+        let dropdown = document.querySelector(".multiselect-dropdown");
+        let menu = document.querySelector(".menu");
+        let listContainer = document.querySelector(".selectedList-container");
+        let selectedItems = [];
+
+        dropdown.onclick = (event) => {
+            event.currentTarget.classList.toggle("show");
+        };
+
+        menu.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            let item = event.target.innerHTML;
+
+            if (!selectedItems.includes(item)) {
+                selectedItems.push(item);
+                showSelectedItems(item);
+            }
+        });
+
+        function showSelectedItems(item) {
+            let itemSpan = document.createElement("span");
+            let crossIcon = document.createElement("i");
+
+            itemSpan.innerHTML = item;
+            itemSpan.classList.add("selectedItem");
+
+            crossIcon.classList.add("fa-solid", "fa-xmark");
+            itemSpan.append(crossIcon);
+
+            itemSpan.addEventListener("click", deleteItem);
+            listContainer.append(itemSpan);
+        }
+
+        function deleteItem(event) {
+            event.stopPropagation();
+            let item = event.currentTarget;
+
+            selectedItems = selectedItems.filter((value) => value !== item.textContent);
+
+            item.classList.add("zoomOut");
+
+            setTimeout(() => {
+                item.remove();
+                item.classList.remove("zoomOut");
+            }, 390);
+        }
+
+
+
+
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            mergetags_list: [
+                { value: 'First.Name', title: 'First Name' },
+                { value: 'Email', title: 'Email' },
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
+        });
+    </script>
+ <!-- jQuery library -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/coursel.js"></script>
+  <script src="js/customSelector.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
 
   <script>
-   var btn1 = document.getElementById("btn1");
-   var btn2 = document.getElementById("btn2");
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+         margin:20,
+         responsiveClass:true,
+         navText: ['<img class="navs" src="img/Untitled-2copy.png">','<img  class="navs" src="img/Untitled-1 copy.png">'],
+         nav:true,                  
+         responsive:{
+           
+            0:{
+                items:1,
+                nav:true
+            },
+            1000:{
+                items:2,
+                nav:true,
+                loop:false
+            },
+            1274:{
+              items:3,
+                nav:true,
+                loop:false
+            }
+         } 
+})
+    </script>
 
-   var cont1 = document.getElementById("content1");
-   var cont2 = document.getElementById("content2");
+  <script>
+    function expandCollapse() {
+        var content = document.getElementById("collapseParagraph");
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = "none"; /* You can adjust the height as needed */
+        }
+    }
+</script>
+  <script>
 
 
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
 
-   btn1.addEventListener("click", function(){
-    cont1.style.display='block';
-   cont2.style.display='none';
-});
-btn2.addEventListener("click", function(){
-    cont1.style.display='none';
-   cont2.style.display='block';
-});
+    const readMoreBtn = document.querySelector('.read-more');
+    const collapseEl = document.querySelector('.collapse');
+    count = 0
+    readMoreBtn.addEventListener('click', function () {
+      
+    readMoreBtn.textContent = count %2 == 0? 'Read less' : "Read More";            
+      count++
+    });
+
+
+    
+
+    
   </script>
 </body>
+
 </html>
