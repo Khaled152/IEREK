@@ -95,6 +95,7 @@
             background-color: #05af4f;
             color: white;
             padding: 20px;
+            margin: 2px;
         }
 
         #warning-p {
@@ -242,92 +243,171 @@
                     </div>
                 </div>
                 <br>
-                <div class="row checkout-form " style="">
-                    <div class="col-1 payment1" >
+               
+                <div class="row  checkout-form" id="bank" style="">
+                    <button id="btn1" style="background-color: #05af4f; border: none; color: white;">
+                    <div class="col-11">
                         <i class="fa-solid fa-paper-plane" style="font-size: 30px; "></i>
-                    </div>
-                    <div class="col-11">
-                        <h5  style="display: inline; margin-left: 5px;">Pay With Credit Card (VISA & MASTER)</h5>
+                        <h5  style="display: inline; margin-left: 5px;">Pay With Bank transfer</h5>
 
                     </div>
+                </button>
                 </div>
-                <div class="row" style=" padding: 10px;">
-                    <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
-                        suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
-                        volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
-                        velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
-                        sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
-                        eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
-                        eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
-                        varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
-                    </div>
-                </div>
-                <div class="row" style=" padding: 10px;">
-                    <p id="warning-p">**NOTE*: The transaction fee is solely the participants' responsibility.</p>
-                </div>
-                <div class="row" style=" padding: 10px;">
-                    <h5>After you have completed the payment, kindly do the following;</h5>
-                    <br>
-                    <p>- inform us with all the transaction details.</p>
-                    <p>The registration marked as pendding until we confirm the transaction. Note: you have to select
-                        fees first to show our relative bank account to the select curreny!</p>
-                    <p>After you make your transfer, kindly send us a scanned copy of the receipt to
-                        financialservice@ierek.com </p>
-                </div>
-                <div class="row" style=" padding: 10px;">
+            
 
-                    <div class="alert alert-info" role="alert">
-                        A Confimation message will be sent to you after we recive the receipt
-                    </div>
-                </div>
-                <div class="row" style=" padding: 10px;">
-
-                    <h4> Contact information</h4>
-                    <hr>
-                </div>
-                <form action="#" method="POST">
-
+                <div id="content1">
                     <div class="row" style=" padding: 10px;">
-
-                        <div class="col-12">
-                            <label for="Name">Name</label>
-                            <input type="text" class="form-control" id="email">
+                        <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
+                            suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
+                            volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
+                            velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
+                            sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
+                            eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
+                            eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
+                            varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
                         </div>
-
-                        <br>
-
-                        <div class="col-12">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-
-                        <br>
-                        <div class="col-12">
-                            <label for="Phone">Phone</label>
-                            <input type="number" class="form-control" id="email">
-                        </div>
-
                     </div>
-                </form>
-                <div class="row" style=" padding: 10px;">
-                    <div class="col-1"  style="text-align: end;">
-                        <i class="fa-solid fa-phone" style="color: #05af4f; text-align: end;" ></i>
-
+                    <div class="row" style=" padding: 10px;">
+                        <p id="warning-p">**NOTE*: The transaction fee is solely the participants' responsibility.</p>
                     </div>
-                    <div class="col-11" style="text-align: start;">
-                        <p style="color: #05af4f; ">You Will be Contacted by our repressentative requlary within 24 hours. (Need help? Contact Us)</p>
+                    <div class="row" style=" padding: 10px;">
+                        <h5>After you have completed the payment, kindly do the following;</h5>
+                        <br>
+                        <p>- inform us with all the transaction details.</p>
+                        <p>The registration marked as pendding until we confirm the transaction. Note: you have to select
+                            fees first to show our relative bank account to the select curreny!</p>
+                        <p>After you make your transfer, kindly send us a scanned copy of the receipt to
+                            financialservice@ierek.com </p>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+    
+                        <div class="alert alert-info" role="alert">
+                            A Confimation message will be sent to you after we recive the receipt
+                        </div>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+    
+                        <h4> Contact information</h4>
+                        <hr>
+                    </div>
+                    <form action="#" method="POST">
+    
+                        <div class="row" style=" padding: 10px;">
+    
+                            <div class="col-12">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+    
+                            <br>
+    
+                            <div class="col-12">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+    
+                            <br>
+                            <div class="col-12">
+                                <label for="Phone">Phone</label>
+                                <input type="number" class="form-control" id="email">
+                            </div>
+    
+                        </div>
+                    </form>
+                    <div class="row" style=" padding: 10px;">
+                        <div class="col-1"  style="text-align: end;">
+                            <i class="fa-solid fa-phone" style="color: #05af4f; text-align: end;" ></i>
+    
+                        </div>
+                        <div class="col-11" style="text-align: start;">
+                            <p style="color: #05af4f; ">You Will be Contacted by our repressentative requlary within 24 hours. (Need help? Contact Us)</p>
+                        </div>
                     </div>
                 </div>
+                
                 <br>
-                <div class="row checkout-row" style="">
-                    <div class="col-1" style="text-align: end;">
-                        <i class="fa-solid fa-dollar-sign" style="font-size: 30px; "></i>
-
-                    </div>
+                
+                <div class="row checkout-row"  id="cash">
+                    
+                    <button id="btn2" style="background-color: #d8d8d8; border: none; color: white;">
                     <div class="col-11">
+                        <i class="fa-solid fa-dollar-sign" style="font-size: 30px; "></i>
                         <h5 style="display: inline;">Pay With Cash</h5>
 
+                    </div>
+                </button>
+                </div>
+                
+                <br>
+                <div id="content2" style="display: none;">
+                    <div class="row" style=" padding: 10px;">
+                        <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
+                            suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
+                            volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
+                            velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
+                            sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
+                            eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
+                            eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
+                            varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
+                        </div>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+                        <p id="warning-p">**NOTE*: The transaction fee is solely the participants' responsibility.</p>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+                        <h5>After you have completed the payment, kindly do the following;</h5>
+                        <br>
+                        <p>- inform us with all the transaction details.</p>
+                        <p>The registration marked as pendding until we confirm the transaction. Note: you have to select
+                            fees first to show our relative bank account to the select curreny!</p>
+                        <p>After you make your transfer, kindly send us a scanned copy of the receipt to
+                            financialservice@ierek.com </p>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+    
+                        <div class="alert alert-info" role="alert">
+                            A Confimation message will be sent to you after we recive the receipt
+                        </div>
+                    </div>
+                    <div class="row" style=" padding: 10px;">
+    
+                        <h4> Contact information</h4>
+                        <hr>
+                    </div>
+                    <form action="#" method="POST">
+    
+                        <div class="row" style=" padding: 10px;">
+    
+                            <div class="col-12">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+    
+                            <br>
+    
+                            <div class="col-12">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+    
+                            <br>
+                            <div class="col-12">
+                                <label for="Phone">Phone</label>
+                                <input type="number" class="form-control" id="email">
+                            </div>
+    
+                        </div>
+                    </form>
+                    <div class="row" style=" padding: 10px;">
+                        <div class="col-1"  style="text-align: end;">
+                            <i class="fa-solid fa-phone" style="color: #05af4f; text-align: end;" ></i>
+    
+                        </div>
+                        <div class="col-11" style="text-align: start;">
+                            <p style="color: #05af4f; ">You Will be Contacted by our repressentative requlary within 24 hours. (Need help? Contact Us)</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row" style=" padding: 10px;">
@@ -444,7 +524,42 @@
       
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+     
+        var cont1 = document.getElementById("content1");
+        var cont2 = document.getElementById("content2");
+        var class1 = document.getElementById("bank");
+        var class2 = document.getElementById("cash");
+     
+     
+        btn1.addEventListener("click", function(){
+       
+         cont1.style.display='block';
+        cont2.style.display='none';
+        btn2.style.backgroundColor='#d8d8d8';
+        btn2.style.color="black";
+        btn1.style.backgroundColor='#05af4f';
+        btn1.style.color="white";
+        class1.style.backgroundColor='#05af4f';
+        class2.style.backgroundColor='#d8d8d8';
+        
 
+     });
+     btn2.addEventListener("click", function(){
+        
+         cont1.style.display='none';
+        cont2.style.display='block';
+        btn1.style.backgroundColor='#d8d8d8';
+        btn1.style.color="black";
+        btn2.style.backgroundColor='#05af4f';
+        btn2.style.color="white";
+        class2.style.backgroundColor='#05af4f';
+        class1.style.backgroundColor='#d8d8d8';
+        
+     });
+       </script>
 </body>
 
 </html>
