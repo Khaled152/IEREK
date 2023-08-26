@@ -469,6 +469,15 @@ form {
 #result-2{
   margin-left: 40px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 20px; height: 980px; width: 400px;
 }
+#register{
+  width: 500px;
+}
+#form-title{
+  font-size: 18px;
+}
+.grid-form{
+  padding-bottom: 20px;
+}
 /******************responsive***********************************/
 
     /* Styles for tablets (portrait and landscape) */
@@ -637,7 +646,13 @@ margin-left: 35px;
 }
 /**************************Mobile**********************/
 @media (max-width: 414px) {
-
+  #register{
+    width: 380px;
+    height: 880px;
+  }
+  #form-title{
+    font-size: 13px;
+  }
   #header{
     justify-content: center;
   }
