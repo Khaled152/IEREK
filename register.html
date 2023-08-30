@@ -14,138 +14,171 @@
   <link href="css/style.css" rel="stylesheet">
 
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/owl.carousel.min.css" rel="stylesheet">
-  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  
   <script src="js/all.js"></script>
 
   <title>Document</title>
   <style>
-    body {
-  font-family: Arial, sans-serif;
-	background: #ddd;
-}
 
 h1 {
-	text-align: center;
-	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-	color: #333;
-	text-shadow: 0 1px 0 #fff;
-	margin: 50px 0;
+  text-align: center;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  margin: 50px 0;
 }
-
 #wrapper {
-	width: 100px;
-	margin: 0 auto;
-	background: #fff;
-	padding: 20px;
-	border: 10px solid #aaa;
-	border-radius: 15px;
-	background-clip: padding-box;
-	text-align: center;
+  width: 100px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 10px solid #aaa;
+  border-radius: 15px;
+  background-clip: padding-box;
+  text-align: center;
 }
-
 .button {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	padding: 5px 10px;
-	border: 1px solid #aaa;
-	background-color: #eee;
-	background-image: linear-gradient(top, #fff, #f0f0f0);
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-	color: #666;
-	text-decoration: none;
-	text-shadow: 0 1px 0 #fff;
-	cursor: pointer;
-	transition: all 0.2s ease-out;
-  &:hover {
-    border-color: #999;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-  }
-  &:active {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
-  }
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  background-image: linear-gradient(top, #fff, #f0f0f0);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  color: #666;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
-
+.button:hover {
+  border-color: #999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.button:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+}
 .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,0.5);
-	transition: opacity 200ms;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
   visibility: hidden;
-	opacity: 0;
-	&.light {
-    background: rgba(255,255,255,0.5);
-  }
-  .cancel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
-  }
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
+  opacity: 0;
+}
+.overlay.light {
+  background: rgba(255, 255, 255, 0.5);
+}
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 75px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 300px;
+  
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.light .popup {
+  border-color: #aaa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.popup h2 {
+  margin-top: 0;
+  color: #666;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+.popup .close:hover {
+  opacity: 1;
+}
+.popup .content {
+  max-height: 400px;
+}
+.popup p {
+  margin: 0 0 1em;
+}
+.popup p:last-child {
+  margin: 0;
 }
 
-.popup {
-	margin: 75px auto;
-	padding: 20px;
-	background: #fff;
-	border: 1px solid #666;
-	width: 300px;
-	box-shadow: 0 0 50px rgba(0,0,0,0.5);
-	position: relative;
-  .light & {
-    border-color: #aaa;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-  }
-  h2 {
-    margin-top: 0;
-    color: #666;
-    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-  }
-  .close {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 20px;
-    opacity: 0.8;
-    transition: all 200ms;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #666;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .content {
-    max-height: 400px;
-    overflow: auto;
-  }
-  p {
-    margin: 0 0 1em;
-    &:last-child {
-      margin: 0;
-    }
-  }
-}
   </style>
 </head>
 <body>
-  
+  <!----------------------------------------------------------------------------------------login---------------------------------------------------------------------------------->
+
 <div class="container" style="text-align: center; padding-top: 500px;">
-  <p><a type="button" class="btn btn-success" href="#popup1">REGISTER</a></p>
+  <p><a type="button" class="btn btn-success" href="#popup1">LOGIN</a></p>
 </div>
 
 <div id="popup1" class="overlay" >
-	<div class="popup" id="register">
+
+
+  <div class="popup" id="login" >
+    <div class="row">
+      <div class="col-6 ">
+        <h5 id="form-title">login </h5>
+
+      </div>
+      <div class="col-6" style="text-align: end;">
+        <a class="close" href="#" style="  text-decoration: none; color: black;  font-size: 25px; ">&times;</a>
+
+      </div>
+    </div>
+		<div class="content" style="">
+        <form action="#" method="POST">
+    
+          <div class="row" style=" padding: 10px;">          
+              <div class="col-12 grid-form">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email">
+              </div>
+
+              <div class="col-12 grid-form">
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="col-12 grid-form" style="text-align: center;">
+              <button type="button" class="btn btn-success">login</button>
+
+          </div>
+          <button type="button" class="btn btn-success" style="text-align: center; " id="register1">Register</button>
+
+          </div>
+      </form>
+		</div>
+
+	</div>
+
+
+<!----------------------------------------------------------------------------------------register---------------------------------------------------------------------------------->
+	<div class="popup" id="register" style="display: none; height: 950px;">
     <div class="row">
       <div class="col-6 ">
         <h4 id="form-title">REGISTER AN ACCOUNT</h4>
@@ -247,91 +280,44 @@ h1 {
                 <label for="password">password</label>
                 <input type="password" class="form-control" id="password">
             </div>
-            <div class="col-12 grid-form">
-              <button type="button" class="btn btn-success">SIGN UP</button>
+            <div class="col-12 grid-form" style="text-align: center;">
+              <button type="button" class="btn btn-success" >SIGN UP</button>
 
           </div>
+          <button type="button" class="btn btn-success " id="login1">login</button>
+
           </div>
       </form>
       </form>
 		</div>
 	</div>
+
 </div>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/coursel.js"></script>
-<script src="js/customSelector.js"></script>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-
 <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-       margin:20,
-       responsiveClass:true,
-       navText: ['<img class="navs" src="img/Untitled-2copy.png">','<img  class="navs" src="img/Untitled-1 copy.png">'],
-       nav:true,                  
-       responsive:{
-         
-          0:{
-              items:1,
-              nav:true
-          },
-          1000:{
-              items:2,
-              nav:true,
-              loop:false
-          },
-          1274:{
-            items:3,
-              nav:true,
-              loop:false
-          }
-       } 
-})
-  </script>
+     var btn1 = document.getElementById("register1");
+        var btn2 = document.getElementById("login1");
+     
+        var cont1 = document.getElementById("login");
+        var cont2 = document.getElementById("register");
 
-<script>
-  function expandCollapse() {
-      var content = document.getElementById("collapseParagraph");
-      if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-      } else {
-          content.style.maxHeight = "none"; /* You can adjust the height as needed */
-      }
-  }
+     
+     
+        btn1.addEventListener("click", function(){
+       
+         cont1.style.display='none';
+        cont2.style.display='block';
+       
+        
+
+     });
+     btn2.addEventListener("click", function(){
+        
+         cont1.style.display='block';
+        cont2.style.display='none';
+     
+        
+     });
 </script>
-<script>
-
-
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-  const readMoreBtn = document.querySelector('.read-more');
-  const collapseEl = document.querySelector('.collapse');
-  count = 0
-  readMoreBtn.addEventListener('click', function () {
-    
-  readMoreBtn.textContent = count %2 == 0? 'Read less' : "Read More";            
-    count++
-  });
-
-
-  
-
-  
-</script>
-
 </body>
 </html>
