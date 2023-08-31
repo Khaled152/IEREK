@@ -365,7 +365,7 @@ form {
   width: 120px;
 }
 #logo{
-  width: 678px; padding-top: 20px; padding-left: 50px;
+  width: 678px; padding-top: 0px; padding-left: 00px;
 }
 #btns-banner{
   text-align: right;  ;
@@ -478,6 +478,19 @@ form {
 .grid-form{
   padding-bottom: 20px;
 }
+
+#user-btn{
+  padding: 0px;
+    margin-right: 55px;
+
+}
+#user-name{
+  font-size: 13px;
+
+}
+#user-menu{
+  margin-right: 21px;
+}
 /******************responsive***********************************/
 
     /* Styles for tablets (portrait and landscape) */
@@ -500,6 +513,7 @@ form {
   }
   #banner-text{
     font-size: 30px;
+    margin-top: 0px;
   }
   #banner{
     height: 300px;
@@ -646,6 +660,9 @@ margin-left: 35px;
 }
 /**************************Mobile**********************/
 @media (max-width: 414px) {
+  #user-menu{
+    margin-right: -50px;
+  }
   #register{
     width: 380px;
     height: 880px;

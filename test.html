@@ -106,281 +106,171 @@
   
           /************************checkout********************/
       </style>
+      <style>
+        .header-nav {
+	 position: relative;
+	 width: 100%;
+	 height: 58px;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 background-color: #fff;
+	 padding: 1.5rem 2.5rem 1.9rem;
+	 box-shadow: 0 4px 8px 0 rgba(50, 50, 93, .05);
+}
+ .header-nav:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 150px;
+}
+ .header-left, .header-right {
+	 display: flex;
+	 align-items: center;
+	 flex: 1 1 auto;
+}
+ .header-right {
+	 position: relative;
+	 justify-content: flex-end;
+}
+ .logo {
+	 background-color: #e9e9e9;
+	 height: 2.4rem;
+	 width: 10rem;
+	 border-radius: 4px;
+}
+ .avatar-wrapper {
+	 display: flex;
+	 align-items: center;
+	 cursor: pointer;
+}
+ .avatar-wrapper .avatar-dropdown-arrow {
+	 transition: opacity 0.1s linear, transform 0.15s linear;
+}
+ .avatar-wrapper .avatar-dropdown-arrow.active {
+	 transform: rotate(180deg);
+}
+ .avatar-wrapper:hover .avatar-dropdown-arrow {
+	 opacity: 0.2;
+}
+ .avatar-photo {
+	 border-radius: 4px;
+	 margin-right: 0.5rem;
+}
+ .dropdown-wrapper {
+	 position: absolute;
+	 top: 75%;
+	 transform: scale(0.8);
+	 transform-origin: top;
+	 transform-origin: right;
+	 right: 0;
+	 z-index: 4;
+	 display: flex;
+	 flex-direction: column;
+	 border-radius: 4px;
+	 margin-top: 0.5rem;
+	 padding: 1.5rem;
+	 background-color: #fff;
+	 box-shadow: 0 0 0 1px rgba(50, 50, 93, .08), 0 2px 4px 0 rgba(50, 50, 93, .05), 0 4px 8px 0 rgba(136, 152, 170, .08);
+	 transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	 opacity: 0;
+	 visibility: hidden;
+}
+ .dropdown-wrapper.active {
+	 top: 100%;
+	 transform: scale(1);
+	 opacity: 1;
+	 visibility: visible;
+}
+ .dropdown-profile-details {
+	 display: flex;
+	 flex-direction: column;
+	 padding-bottom: 1.5rem;
+	 border-bottom: 1px solid #eaeaea;
+}
+ .dropdown-profile-details--name {
+	 font-size: 1.75rem;
+	 margin-bottom: 0;
+	 font-weight: 600;
+}
+ .dropdown-profile-details--email {
+	 font-size: 1.2rem;
+	 color: #6f6f6f;
+}
+ .dropdown-links {
+	 display: flex;
+	 flex-direction: column;
+	 padding-top: 1.5rem;
+}
+ .dropdown-links a {
+	 color: #525f7f;
+	 text-decoration: none;
+	 padding-bottom: 1rem;
+	 transition: all 0.1s linear;
+}
+ .dropdown-links a:hover {
+	 color: #ebeff5;
+}
+ .dropdown-links a:last-of-type {
+	 padding-bottom: 0;
+}
+ 
+      </style>
 </head>
 
 <body>
     <!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light" >
-        <div class="container-fluid "id="header">
-          <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
-            style="" id="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link "  href="#test">About Us</a>
-              </li>
-              <div class="nav-tab navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#conditions">Conditions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#oral">Oral Discussion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#submissions">Submissions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#fess">Fess</a>
-              </li>
-            </div>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <header class="header-nav">
+        <div class="header-left">
+          <div class="">  <a class="navbar-brand" href="#"><img src="img/Capture.JPG"
+            style="" id="logo"></a></div>
 
-    <!-------------------------------------------------------------End Navbar---------------------------------------------------------------------->
-
-    <!-------------------------------------------------------------start Main---------------------------------------------------------------------->
-    <main>
-
-          <!--start statues section-->
-    <div class="container" id="statues">
-      <div class="row status-row">
-          <div class="col-md-4 col-sm-12 status-col">
-              <div class="review-item">
-                  <div class="reivew-top">
-                      <i class="fas fa-edit myicon statues-icon" style=" "></i>
-                      <h2 style="display: inline;">Order</h2>
-                  </div>
-                  <p class="status-p">Choose you fees and aditional service </p>
+            <div class=" navbarNav collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link "  href="#test">About Us</a>
+                </li>
+                <div class="nav-tab navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#conditions">Conditions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#oral">Oral Discussion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#submissions">Submissions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#fess">Fess</a>
+                </li>
               </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 status-col">
-              <div class="review-item">
-                  <div class="reivew-top">
-                      <i class="fa-solid fa-check  myicon statues-icon"></i>
-                      <h2 style="display: inline;">Review</h2>
-                  </div>
-                  <p class="status-p">Review Your Order</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 status-col" id="status-active">
-              <div class="review-item">
-                  <div class="reivew-top">
-                      <i class="fa-solid fa-check  myicon statues-icon" id="icon-active"></i>
-                      <h2 style="display: inline;" id="status-active">Checkout</h2>
-                  </div>
-                  <p class="status-p" id="status-active">Confirm Your Payment and checkout </p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!--end statues section-->
-
-        <div class="container" style="" id="paper-container">
-            <div class="row">
-                <div class="col-md-6" id="paper-1"
-                    style="">
-                    <div class="row" style="background-color: #05af4f;">
-                        <p style="color: white; font-size: 13px;"><span style="font-size: 25px;">SUBMIT PAPAER</span>
-                            Cittes' identify Through Architecture
-                            and Arts (CITTA) -7th Edition</p>
-                    </div>
-                    <div class="row" style=" padding: 10px;">
-                        <div class="alert alert-warning" id="Instructions" role="alert" style="border-radius: 0px;">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis varius ante, nec
-                            suscipit massa. Sed facilisis vel velit nec hendrerit. Curabitur at aliquet eros. Donec
-                            volutpat, sapien ut luctus egestas, nisi ex bibendum orci, eu scelerisque massa nulla vitae
-                            velit. Quisque et justo auctor, facilisis eros eget, facilisis dolor. Vivamus a mi eu turpis
-                            sodales posuere eu non arcu. Nam aliquam ex velit, vitae bibendum nisi lacinia a. Nullam
-                            eget tortor ac purus gravida interdum. Aliquam sagittis nibh id risus aliquet, in interdum
-                            eros porttitor. Donec eu ante et quam hendrerit euismod. Etiam euismod, mauris id sagittis
-                            varius, felis quam semper risus, in pulvinar sapien metus vel lectus."
-                        </div>
-                    </div>
-                    <form>
-                        <div class="row">
-                            <div class="mb-3">
-                                <label class="form-label">Subject</label>
-
-                                <select class="form-select" aria-label="Default select example"
-                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Topics</label>
-
-                                <div class="multiselect-dropdown">
-                                    <i class="fa-solid fa-chevron-down icon"></i>
-                                    <div class="selectedList-container "
-                                        style="border: 1px solid black;  border-radius: 0px; "></div>
-                                    <ul class="menu ">
-                                        <li>Pink</li>
-                                        <li>Blue</li>
-                                        <li>Green</li>
-                                        <li>Yellow</li>
-                                        <li>Red</li>
-                                        <li>Orange</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Subject</label>
-
-                                <select class="form-select" aria-label="Default select example"
-                                    style="border-radius: 0px; border: 1px solid black; width:354px ;">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-
-                            </div>
-                            <div class="mb-3">
-                                <a href="Paper.html" type="button" class="btn btn-success">Paper</a>
-                                <a href="Abstract.html" type="button" class="btn btn-success">Abstract</a>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Paper Title</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    style="width: 354px;border: 1px solid black; border-radius: 0px;">
-                            </div>
-
-
-
-
-
-                            <div class="mb-3">
-                                <label>OR Upload your Paper File : (Allowed EXtinsions: pdf, doc, docm and
-                                    dox)</label>
-                                <div class="row" style="width: 370px; padding-left: 20px;">
-
-                                    <input class="form-control" type="file" name="files[]" multiple>
-
-
-                                </div>
-                            </div>
-                            <div class="mb-3">
-
-                                <div class="row" style="width: 370px; padding-left: 20px;">
-
-                                    <input class="form-control" type="file" name="files[]" multiple>
-
-
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="mb-3">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Please Confirm that you Read <a href="#Instructions">Instructions</a>.
-                                        </label>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <button type="button" class="btn btn-success" style="border-radius: 0px;">Submit
-                                            Paper</button>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div>
-                <div class="col-md-5" id="paper-2"
-                    style="">
-
-                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-cloud-arrow-up"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"><del> 1.Abstract</del>
-                            </h3>
-
-                        </div>
-                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px; background-color: #abb7b0;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-eye"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> <del>2.Status</del>
-                            </h3>
-
-                        </div>
-                        <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </del></p>
-                    </div>
-                    <hr>
-
-                    <div class="row" style=" padding: 20px; background-color: #05af4f;">
-                        <div class="col-md-3">
-                            <i class="fa-solid fa-upload"
-                                style=" padding-right: 10px; border: 1px solid white; font-size: 40px; color: white; border-radius: 110px; padding: 10px; background-color: rgb(13, 40, 15); "></i>
-                        </div>
-                        <div class="col-md-9" style="margin-left: -18px;">
-                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold; color: white;"> 3.Paper
-                            </h3>
-
-                        </div>
-                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-laptop"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 4.Revision</h3>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <hr>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <div class="col-md-2">
-                            <i class="fa-solid fa-link"
-                                style=" border: 1px solid black; font-size: 40px; border-radius: 110px; padding: 10px; background-color: rgb(225, 223, 223); "></i>
-
-                        </div>
-                        <div class="col-md-10">
-                            <h3 style="padding-top: 15px; font-family: Samsung Sharp Sans bold;"> 5.Result</h3>
-
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <div class="row" style="padding-top: 20px; padding: 10px;">
-                        <button type="button" class="btn btn-success" style="border-radius: 0px;"><i
-                                class="fa-solid fa-file-circle-check"></i> Download Writting Template</button>
-
-                    </div>
-                </div>
+              </ul>
             </div>
         </div>
+        <div class="header-right">
+          <div class="avatar-wrapper" id="avatarWrapper">
+            <img alt="Profile Photo" class="avatar-photo" height="28" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/287405/profile/profile-512.jpg" width="28"/>
+            <svg class="avatar-dropdown-arrow" height="24" id="dropdownWrapperArrow" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>Dropdown Arrow</title>
+              <path d="M12 14.5c-.2 0-.3-.1-.5-.2l-3.8-3.6c-.2-.2-.2-.4-.2-.5 0-.1 0-.3.2-.5.3-.3.7-.3 1 0l3.3 3.1 3.3-3.1c.2-.2.5-.2.8-.1.3.1.4.4.4.6 0 .2-.1.4-.2.5l-3.8 3.6c-.1.1-.3.2-.5.2z"></path>
+            </svg>
+          </div>
+
+          <div class="dropdown-wrapper" id="dropdownWrapper" style="width: 256px">
+            <div class="dropdown-profile-details">
+              <span class="dropdown-profile-details--name">Felix Lee</span>
+              <span class="dropdown-profile-details--email">hello@felixlee.io</span>
+            </div>
+            <div class="dropdown-links">
+              <a href="#">Profile</a>
+              <a href="#">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </header>
+<!-------------------------------------------------------------Start Navbar---------------------------------------------------------------------->
 
 
 
@@ -441,71 +331,6 @@
     <script src="https://cdn.tiny.cloud/1/lbn5nyw5r6ak0y883ixfucz9gt1wa7jxesmv8whz6zqlvqfj/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
 
-    <script>
-        let dropdown = document.querySelector(".multiselect-dropdown");
-        let menu = document.querySelector(".menu");
-        let listContainer = document.querySelector(".selectedList-container");
-        let selectedItems = [];
-
-        dropdown.onclick = (event) => {
-            event.currentTarget.classList.toggle("show");
-        };
-
-        menu.addEventListener("click", (event) => {
-            event.stopPropagation();
-
-            let item = event.target.innerHTML;
-
-            if (!selectedItems.includes(item)) {
-                selectedItems.push(item);
-                showSelectedItems(item);
-            }
-        });
-
-        function showSelectedItems(item) {
-            let itemSpan = document.createElement("span");
-            let crossIcon = document.createElement("i");
-
-            itemSpan.innerHTML = item;
-            itemSpan.classList.add("selectedItem");
-
-            crossIcon.classList.add("fa-solid", "fa-xmark");
-            itemSpan.append(crossIcon);
-
-            itemSpan.addEventListener("click", deleteItem);
-            listContainer.append(itemSpan);
-        }
-
-        function deleteItem(event) {
-            event.stopPropagation();
-            let item = event.currentTarget;
-
-            selectedItems = selectedItems.filter((value) => value !== item.textContent);
-
-            item.classList.add("zoomOut");
-
-            setTimeout(() => {
-                item.remove();
-                item.classList.remove("zoomOut");
-            }, 390);
-        }
-
-
-
-
-        tinymce.init({
-            selector: 'textarea',
-            plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-            tinycomments_mode: 'embedded',
-            tinycomments_author: 'Author name',
-            mergetags_list: [
-                { value: 'First.Name', title: 'First Name' },
-                { value: 'Email', title: 'Email' },
-            ],
-            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
-        });
-    </script>
  <!-- jQuery library -->
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/coursel.js"></script>
@@ -513,75 +338,28 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.js"></script>
+<script>
+    var headerProfileAvatar = document.getElementById("avatarWrapper")
+var headerProfileDropdownArrow = document.getElementById("dropdownWrapperArrow");
+var headerProfileDropdown = document.getElementById("dropdownWrapper");
 
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-         margin:20,
-         responsiveClass:true,
-         navText: ['<img class="navs" src="img/Untitled-2copy.png">','<img  class="navs" src="img/Untitled-1 copy.png">'],
-         nav:true,                  
-         responsive:{
-           
-            0:{
-                items:1,
-                nav:true
-            },
-            1000:{
-                items:2,
-                nav:true,
-                loop:false
-            },
-            1274:{
-              items:3,
-                nav:true,
-                loop:false
-            }
-         } 
-})
-    </script>
-
-  <script>
-    function expandCollapse() {
-        var content = document.getElementById("collapseParagraph");
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = "none"; /* You can adjust the height as needed */
-        }
+document.addEventListener("click", function(event) {
+  var headerProfileDropdownClickedWithin = headerProfileDropdown.contains(event.target);
+  
+  if (!headerProfileDropdownClickedWithin) {
+    if (headerProfileDropdown.classList.contains("active")) {
+      headerProfileDropdown.classList.remove("active");
+      headerProfileDropdownArrow.classList.remove("active");
     }
+  }
+});
+
+headerProfileAvatar.addEventListener("click", function(event) {
+  headerProfileDropdown.classList.toggle("active");
+  headerProfileDropdownArrow.classList.toggle("active");
+  event.stopPropagation();
+});
 </script>
-  <script>
-
-
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    const readMoreBtn = document.querySelector('.read-more');
-    const collapseEl = document.querySelector('.collapse');
-    count = 0
-    readMoreBtn.addEventListener('click', function () {
-      
-    readMoreBtn.textContent = count %2 == 0? 'Read less' : "Read More";            
-      count++
-    });
-
-
-    
-
-    
-  </script>
 </body>
 
 </html>
